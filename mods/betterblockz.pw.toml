@@ -3,11 +3,11 @@ name = "BetterBlockZ"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "9147c9ad28abb61006fbcac30fcb5a6f8645ab88"
-mode = 'metadata:curseforge'
+url = "https://cdn.modrinth.com/data/oPU4euBQ/versions/j885m1Ia/betterblockz-0.2.9-1.20.1-forge.jar"
+hash-format = "sha512"
+hash = "98e9e098a678232e929c829d15a453c120be463219ef26fbed900ea9cbc2ab89c98a680a520db7ea5a51473e4ca7ae2f55fdb2e058b9568c80b1e2808bf8457e"
 
 [update]
-[update.curseforge]
-file-id = 8077420
-project-id = 1361873
+[update.modrinth]
+mod-id = "oPU4euBQ"
+version = "j885m1Ia"

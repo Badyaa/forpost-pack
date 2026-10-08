@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".DS_Store"
+hash = "3a49a5422b79488f5be31a3b201e065c9265583c87425b6c6cdec26e19e64b8b"
+
+[[files]]
 file = "config/AdvancedBackups-client.properties"
 hash = "2ebc68846ce5dd86ca200e2e996337a7c4fa0cda38b779c98115f1b30def3d01"
 preserve = true
@@ -12056,7 +12060,7 @@ metafile = true
 
 [[files]]
 file = "mods/betterblockz.pw.toml"
-hash = "8a2b3430576de0eba403f72f35a4d2ff62fa9cf58c93f2eb2e22ea424e07c70f"
+hash = "c73e81e024f14ed84a0ec917e383cf1ae5eac60f4ba91a23c3b84ebef4daa96d"
 metafile = true
 
 [[files]]
@@ -12346,7 +12350,7 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "7c70ed7c1a81c05852bda5f3420b2c4bdecc6da98ec387e41903e856460e9565"
+hash = "e6bea081f4ae7c975f131b8cf41a72282a4c9e04c53797aedcff25795d8dbcb6"
 metafile = true
 
 [[files]]

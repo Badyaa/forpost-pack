@@ -31,6 +31,15 @@ PRESERVE_PATTERNS = [r"^config/DistantHorizons", r"^config/embeddium", r"^config
                      r"^shaderpacks/", r"^options\.txt$"]
 # лицензия "All Rights Reserved": свой (пропатченный) jar в публичный репозиторий не кладём, ставим оригинал по ссылке
 NO_REDIST = {"ColonyRank-1.20.1-2.0.1.jar"}
+# моды, закрытые для сторонних лаунчеров в API CurseForge: берём тот же файл (тот же хеш) с Modrinth
+MODRINTH_OVERRIDE = {
+    "betterblockz-0.2.9-1.20.1-forge.jar": ("oPU4euBQ", "j885m1Ia",
+        "https://cdn.modrinth.com/data/oPU4euBQ/versions/j885m1Ia/betterblockz-0.2.9-1.20.1-forge.jar",
+        "98e9e098a678232e929c829d15a453c120be463219ef26fbed900ea9cbc2ab89c98a680a520db7ea5a51473e4ca7ae2f55fdb2e058b9568c80b1e2808bf8457e"),
+    "entityculling-forge-1.10.3-mc1.20.1.jar": ("NNAgCjsB", "j85RICNO",
+        "https://cdn.modrinth.com/data/NNAgCjsB/versions/j85RICNO/entityculling-forge-1.10.3-mc1.20.1.jar",
+        "e414b1c62ec50fcdf8bcb27c894af45313ca7686539449b8e59fbf2a583836b956271a87f34198a388d12837e5e68eb4cbb52688ebecec591e53b2bae8142a82"),
+}
 RENAME = {"Iglee's Library-1.20.1-1.2.7.jar": "IgleesLibrary-1.20.1-1.2.7.jar"}
 
 def sha(path, algo="sha256"):
@@ -75,6 +84,9 @@ for fn in sorted(os.listdir(idx_dir)):
     if sha(os.path.join(SRC, "mods", fname), hf) != h and fname not in NO_REDIST:
         local.append(fname); continue          # пропатчен -> шлём сам файл
     mode, url = get(t, "mode", "download"), get(t, "url", "download")
+    if fname in MODRINTH_OVERRIDE:
+        mr_id, mr_ver, url, h = MODRINTH_OVERRIDE[fname]
+        hf, mode = "sha512", "url"
     name = get(t, "name") or fname
     out = ["filename = " + q(fname), "name = " + q(name), 'side = "both"', "", "[download]"]
     if mode == "url": out.append("url = " + q(url))
@@ -82,6 +94,7 @@ for fn in sorted(os.listdir(idx_dir)):
     if mode == "metadata:curseforge": out.append("mode = 'metadata:curseforge'")
     cf_p, cf_f = get(t, "project-id", "update.curseforge"), get(t, "file-id", "update.curseforge")
     mr_m, mr_v = get(t, "mod-id", "update.modrinth"), get(t, "version", "update.modrinth")
+    if fname in MODRINTH_OVERRIDE: cf_p, mr_m, mr_v = None, mr_id, mr_ver
     if cf_p: out += ["", "[update]", "[update.curseforge]", "file-id = %s" % cf_f, "project-id = %s" % cf_p]
     elif mr_m: out += ["", "[update]", "[update.modrinth]", "mod-id = " + q(mr_m), "version = " + q(mr_v)]
     meta_ok[fname] = True
