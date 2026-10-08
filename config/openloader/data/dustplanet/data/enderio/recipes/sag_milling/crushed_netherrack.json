@@ -1,0 +1,24 @@
+{
+  "type": "enderio:sag_milling",
+  "bonus": "none",
+  "energy": 2400,
+  "input": {
+    "item": "exdeorum:crushed_netherrack"
+  },
+  "outputs": [
+    {
+      "chance": 1.0,
+      "item": {
+        "item": "create:cinder_flour"
+      },
+      "optional": false
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "item": "create:cinder_flour"
+      },
+      "optional": false
+    }
+  ]
+}

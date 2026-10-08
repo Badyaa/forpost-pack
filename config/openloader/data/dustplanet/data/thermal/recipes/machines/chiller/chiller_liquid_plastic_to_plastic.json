@@ -1,0 +1,19 @@
+{
+  "type": "thermal:chiller",
+  "ingredients": [
+    {
+      "fluid": "pneumaticcraft:plastic",
+      "amount": 1000
+    },
+    {
+      "item": "thermal:chiller_ingot_cast"
+    }
+  ],
+  "result": [
+    {
+      "item": "pneumaticcraft:plastic",
+      "count": 1
+    }
+  ],
+  "energy": 100
+}

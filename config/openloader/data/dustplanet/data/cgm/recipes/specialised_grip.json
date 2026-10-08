@@ -1,0 +1,16 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 2,
+      "item": "pneumaticcraft:ingot_iron_compressed"
+    },
+    {
+      "count": 2,
+      "item": "thermal:cured_rubber"
+    }
+  ],
+  "result": {
+    "item": "cgm:specialised_grip"
+  }
+}

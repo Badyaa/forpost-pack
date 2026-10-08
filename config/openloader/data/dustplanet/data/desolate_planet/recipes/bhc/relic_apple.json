@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "EAE"
+  ],
+  "key": {
+    "E": {
+      "tag": "forge:gems/emerald"
+    },
+    "A" : {
+      "item": "tconstruct:jeweled_apple"
+    }
+  },
+  "result": {
+    "item": "bhc:relic_apple"
+  }
+}

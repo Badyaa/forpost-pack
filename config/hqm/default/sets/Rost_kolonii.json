@@ -1,0 +1,414 @@
+{
+  "name": "Рост колонии",
+  "reputationBar": [],
+  "description": {
+    "text": "Наука, школа, ремёсла и ратуша второго уровня: как из посёлка сделать город.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "416cccba-c978-554e-8c6e-986525a31f5d",
+      "name": {
+        "text": "Университет",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Всё важное в MineColonies открывается исследованиями: быстрее стройка, больше жителей, стража сильнее. Университет — дерево исследований.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhutuniversity",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutuniversity",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Университет",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте университет и наймите исследователя. Кликните по зданию → «Исследования»: ветки «Цивилизация», «Технологии», «Бой». Каждое исследование требует предметы (их нужно положить в университет) и время. Начните с «Tavern → Здания» и «Bigger dwellings».",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "fcb2dc1b-4272-5031-9229-6a6e2ce6f47b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:book",
+          "Count": 8
+        },
+        {
+          "id": "minecraft:paper",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ca19accf-eda8-5d03-b9cc-db6d45c50d64",
+      "name": {
+        "text": "Библиотека",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Умный житель работает лучше. В библиотеке жители без работы прокачивают интеллект.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhutlibrary",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutlibrary",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Библиотека",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте библиотеку и наймите библиотекаря. Ей нужны книги — сдайте несколько.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "416cccba-c978-554e-8c6e-986525a31f5d"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:bookshelf",
+          "Count": 4
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d9e22bf5-c5bf-5fe9-8d53-443303e92bce",
+      "name": {
+        "text": "Школа",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Дети колонии вырастают в работников. Школа ускоряет это и даёт навыки.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhutschool",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutschool",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Школа",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте школу и наймите учителя. Дети рождаются, если счастье колонии высокое и есть свободные дома.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ca19accf-eda8-5d03-b9cc-db6d45c50d64"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:cake",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f997b29e-0fce-57d2-b760-d5278672b139",
+      "name": {
+        "text": "Пекарня",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Пшеница — ещё не еда. Пекарь превращает урожай фермера в хлеб и пироги для повара.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhutbaker",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutbaker",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Пекарня",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте пекарню, наймите пекаря и обучите рецепт хлеба. Он берёт пшеницу со склада и кладёт хлеб обратно.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "fcb2dc1b-4272-5031-9229-6a6e2ce6f47b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:bread",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d40c123c-02f7-5605-ae3f-43726e870569",
+      "name": {
+        "text": "Плавильня колонии",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Шахтёр носит руду — плавильня превращает её в слитки для кузнеца и стражи.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhutsmeltery",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutsmeltery",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Плавильня",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте плавильню колонии и наймите плавильщика. Ему нужны печи и топливо.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ceabacb6-e69d-58a5-beb9-a5759aa045dc"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:iron_ingot",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ae0104e9-23d9-58a0-a051-90e135acfc54",
+      "name": {
+        "text": "Компостер",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Ферма быстрее с удобрением. Компостер делает его из листвы, семян и объедков.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "minecolonies:blockhutcomposter",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutcomposter",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Компостер",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте компостер: он превращает мусор в компост, а фермер использует его как костную муку.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "5247643b-7ac2-5561-973d-92dd4837bec3"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:bone_meal",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e2acb551-ec30-502c-bdee-afb23992904b",
+      "name": {
+        "text": "Ратуша уровня 2",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Уровень зданий ограничен уровнем ратуши. Чтобы расти дальше — улучшайте её.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:bell",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Ратуша уровня 2",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Кликните по ратуше → «Улучшить». Строитель должен быть достаточно опытным (уровень его хижины ≥ уровня заказа). Отметьте, когда стройка закончится.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "416cccba-c978-554e-8c6e-986525a31f5d",
+        "229fd30f-1021-58ae-a01d-0d8eb826ec7d"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:emerald",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "61e15ec4-20f3-5877-b344-489aa71fd347",
+      "name": {
+        "text": "Десять голосов",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Десять жителей — уже посёлок. Колонии нужна оборона всерьёз.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:emerald_block",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Десять жителей",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Доведите колонию до 10 жителей. Отметьте галочку.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "e2acb551-ec30-502c-bdee-afb23992904b",
+        "f997b29e-0fce-57d2-b760-d5278672b139"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:emerald_block",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

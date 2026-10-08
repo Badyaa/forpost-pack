@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:dragon_breath"
+    },
+    "E": {
+      "item": "tconstruct:enderman_head"
+    },
+    "S": {
+      "item": "tconstruct:dragon_scale"
+    }
+  },
+  "pattern": [
+    "SS ",
+    "EBS",
+    "SSS"
+  ],
+  "result": {
+    "item": "minecraft:dragon_head"
+  },
+  "show_notification": true
+}

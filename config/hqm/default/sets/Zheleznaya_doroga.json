@@ -1,0 +1,366 @@
+{
+  "name": "Железная дорога",
+  "reputationBar": [],
+  "description": {
+    "text": "Create и Steam 'n' Rails: поезд от колонии к шахте и дальше.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "5dc7a84f-92b2-5d37-9018-cba40769d1bf",
+      "name": {
+        "text": "Первые рельсы",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Рельсы Create делаются из железа и балок. 64 — на первую ветку.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "create:track",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "create:track",
+                "Count": 64
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "64 рельса",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите и сдайте 64 рельса Create.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ceabacb6-e69d-58a5-beb9-a5759aa045dc"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "create:railway_casing",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e88d10d3-6e70-5321-b3d0-4f6eb8be9b8d",
+      "name": {
+        "text": "Станция",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Станция собирает поезд: тележки, корпус, пульт управления.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "create:track_station",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "create:track_station",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "create:controls",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Станция",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Поставьте станцию у рельсов, соберите на них тележки (bogey) с корпусом и пультом, склейте суперклеем и нажмите «Собрать поезд».",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "create:railway_casing",
+                "Count": 3
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Три корпуса поезда",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Три большие тележки — три вагона.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "5dc7a84f-92b2-5d37-9018-cba40769d1bf"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "create:display_board",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "142a65f0-8b6f-5a7f-929b-7615fe9e991a",
+      "name": {
+        "text": "Линия к шахте",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Вторая станция у шахты колонии и расписание — поезд ходит сам.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "create:schedule",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "create:track_station",
+                "Count": 2
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "create:schedule",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Расписание",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Вторая станция у шахты. Расписание: кликните ПКМ, добавьте станции, вставьте в пульт поезда.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "e88d10d3-6e70-5321-b3d0-4f6eb8be9b8d"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "create:portable_storage_interface",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0b8d2b66-37c1-5752-a2ad-791f139063e0",
+      "name": {
+        "text": "Семафоры",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "На однопутке два поезда встречаются лбами. Сигналы это решают.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "railways:semaphore",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "create:track_signal",
+                "Count": 4
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "railways:semaphore",
+                "Count": 4
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Сигналы",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Четыре сигнала и четыре семафора Steam 'n' Rails на однопутке.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "142a65f0-8b6f-5a7f-929b-7615fe9e991a"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "create:track_observer",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9df035bf-ce19-5a08-a777-66a2e74b2255",
+      "name": {
+        "text": "Грузовой узел",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Интерфейс переносного хранилища перегружает вагон сам, пока поезд стоит.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "create:portable_storage_interface",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "create:portable_storage_interface",
+                "Count": 2
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "create:item_vault",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Погрузка",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Два интерфейса — на вагоне и на станции — и хранилище рядом: автоматическая погрузка и разгрузка.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "142a65f0-8b6f-5a7f-929b-7615fe9e991a"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "create:railway_casing",
+          "Count": 4
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1a0791bb-ee65-5b91-9b70-fbf1ca6b13df",
+      "name": {
+        "text": "Дальняя линия",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Маршрут в 500+ блоков до экспедиционной базы. Поезд идёт по ночам, стража спит спокойно.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "railways:conductor_whistle",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "500 блоков",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Проложите маршрут длиной 500+ блоков до экспедиционной базы и прогоните поезд по расписанию.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "0b8d2b66-37c1-5752-a2ad-791f139063e0",
+        "ce1ef0e7-ac1b-55c4-986c-996a4f2c18d8"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "railways:conductor_whistle",
+          "Count": 1
+        },
+        {
+          "id": "create:blaze_burner",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

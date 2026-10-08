@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "ICQ",
+    " G "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "tag": "forge:ingots/graphite"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "C": {
+      "item": "kubejs:crashed_turbine_wall"
+    }
+  },
+  "result": {
+    "item": "biggerreactors:turbine_casing",
+    "count": 1
+  }
+}

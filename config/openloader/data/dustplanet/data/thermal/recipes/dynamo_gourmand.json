@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "thermal:rf_coil"
+    },
+    "G": {
+      "tag": "forge:gears/copper"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "X": {
+      "item": "thermal:machine_frame"
+    },
+    "Y": {
+      "tag": "forge:ingots/tin"
+    }
+  },
+  "pattern": [
+    " C ",
+    "IGI",
+    "YXY"
+  ],
+  "result": {
+    "item": "thermal:dynamo_gourmand"
+  },
+  "show_notification": true
+}

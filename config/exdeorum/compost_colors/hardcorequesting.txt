@@ -1,0 +1,14 @@
+// Compost colors for hardcorequesting. You may add your own colors, change existing ones, or remove colors that aren't needed.
+basic_bag, #edebd7
+enabled_quest_book, #c852f8
+epic_bag, #edebd7
+good_bag, #edebd7
+greater_bag, #edebd7
+halfheart, #ffe8ed
+heart, #fff0f0
+hqm_invalid_item, #fffc70
+legendary_bag, #edebd7
+quarterheart, #ffe8ed
+quest_book, #cf9e7d
+rottenheart, #dcfcac
+threequartsheart, #ffeef0

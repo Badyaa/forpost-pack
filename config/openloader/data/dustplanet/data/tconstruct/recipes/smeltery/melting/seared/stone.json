@@ -1,0 +1,26 @@
+{
+  "type": "tconstruct:melting",
+  "byproducts": [
+    {
+      "amount": 125,
+      "fluid": "tconstruct:seared_stone"
+    }
+  ],
+  "ingredient": [
+    {
+      "tag": "forge:stone"
+    },
+    {
+      "tag": "forge:cobblestone"
+    },
+    {
+      "tag": "forge:deepslate"
+    }
+  ],
+  "result": {
+    "amount": 125,
+    "fluid": "minecraft:lava"
+  },
+  "temperature": 600,
+  "time": 100
+}

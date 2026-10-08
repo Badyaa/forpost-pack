@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "pneumaticcraft:small_tank"
+    },
+    "G": {
+      "tag": "forge:glass"
+    },
+    "S": {
+      "item": "pneumaticcraft:reinforced_stone_slab"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "GDG",
+    "SSS"
+  ],
+  "result": {
+    "item": "pneumaticcraft:refinery_output"
+  },
+  "show_notification": true
+}

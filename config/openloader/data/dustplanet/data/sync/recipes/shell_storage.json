@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC",
+    "GIG",
+    "CPC"
+  ],
+  "key": {
+    "C": {
+      "tag": "desolate_planet:sync_block_ingredients"
+    },
+    "S": {
+      "item": "sync:sync_core"
+    },
+    "G": {
+      "tag": "forge:glass_panes"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "P": {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    }
+  },
+  "result": {
+    "item": "sync:shell_storage"
+  }
+}

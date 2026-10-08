@@ -1,0 +1,13 @@
+filename = "colonylifts-forge-1.0.0.jar"
+name = "Colony Lifts – A Create + MineColonies Addon"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1d204c5174749858b242e463b2903dc63dcb19e9"
+mode = 'metadata:curseforge'
+
+[update]
+[update.curseforge]
+file-id = 9061085
+project-id = 1648879

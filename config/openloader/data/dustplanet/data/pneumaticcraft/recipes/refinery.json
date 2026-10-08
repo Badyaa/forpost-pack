@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "tag": "forge:dusts/redstone"
+    },
+    "S": {
+      "item": "pneumaticcraft:reinforced_stone_slab"
+    },
+    "T": {
+      "type": "forge:nbt",
+      "count": 1,
+      "item": "pneumaticcraft:small_tank"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "RTR",
+    "SSS"
+  ],
+  "result": {
+    "item": "pneumaticcraft:refinery"
+  },
+  "show_notification": true
+}

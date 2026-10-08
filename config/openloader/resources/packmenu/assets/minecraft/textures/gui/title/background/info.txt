@@ -1,0 +1,51 @@
+Contact me (Pawjwp) for more screenshots, I have dozens of variations at different render distances and locations.
+
+All screenshots taken with the following information:
+- Seed of 8650895174575052359
+- Complementary Unbound 5.3
+- Spectator mode to remove shadows
+- FOV effects disabled
+
+Widescreen screenshots taken with the following information:
+- Time of 386 (/time set 386)
+- Position of -14 64 -159 54 -4 (/tp @s -14 64 -159 54 -4)
+- Time of 386 (/time set 386)
+- Resolution of 7680x4320
+- FOV of 70
+- Fullscreen
+
+Floating panoramic hybrid screenshots taken with the following information:
+- Positions of:
+  - 14 72 -159 0 0 (/tp @s -14 72 -159 0 0)
+  - 14 72 -159 90 0 (/tp @s -14 72 -159 90 0)
+  - 14 72 -159 180 0 (/tp @s -14 72 -159 180 0)
+  - 14 72 -159 270 0 (/tp @s -14 72 -159 270 0)
+  - 14 72 -159 0 -90 (/tp @s -14 72 -159 0 -90)
+  - 14 72 -159 0 90 (/tp @s -14 72 -159 0 90)
+- Time of 1000 (/time set 386)
+- Resolution of 4096x4096
+- FOV of 90
+
+Floating panoramic screenshots taken with the following information:
+- Positions of:
+  - 14 72 -159 0 0 (/tp @s -14 72 -159 0 0)
+  - 14 72 -159 90 0 (/tp @s -14 72 -159 90 0)
+  - 14 72 -159 180 0 (/tp @s -14 72 -159 180 0)
+  - 14 72 -159 270 0 (/tp @s -14 72 -159 270 0)
+  - 14 72 -159 0 -90 (/tp @s -14 72 -159 0 -90)
+  - 14 72 -159 0 90 (/tp @s -14 72 -159 0 90)
+- Time of 386 (/time set 386)
+- Resolution of 4096x4096
+- FOV of 90
+
+Ground level panoramic screenshots taken with the following information:
+- Positions of:
+  - 14 64 -159 0 0 (/tp @s -14 64 -159 0 0)
+  - 14 64 -159 90 0 (/tp @s -14 64 -159 90 0)
+  - 14 64 -159 180 0 (/tp @s -14 64 -159 180 0)
+  - 14 64 -159 270 0 (/tp @s -14 64 -159 270 0)
+  - 14 64 -159 0 -90 (/tp @s -14 64 -159 0 -90)
+  - 14 64 -159 0 90 (/tp @s -14 64 -159 0 90)
+- Time of 386 (/time set 386)
+- Resolution of 4096x4096
+- FOV of 90

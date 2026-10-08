@@ -1,0 +1,13 @@
+filename = "ae2ct-1.0.1.jar"
+name = "AE2: Crafting Tree Refreshed"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/a1RwDz90/versions/flhDmaU7/ae2ct-1.0.1.jar"
+hash-format = "sha512"
+hash = "a52ce04796ee6c0e7c96ff8c2aec4514e1212da5fb4a1ef11931b1f53fd3c37e9c20ed445c446a866806b9c4d11b76a47e576e71a1fb5a8fc9492c1014badd15"
+
+[update]
+[update.modrinth]
+mod-id = "a1RwDz90"
+version = "flhDmaU7"

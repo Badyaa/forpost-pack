@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "IYI",
+    " G "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "G": {
+      "tag": "forge:ingots/graphite"
+    },
+    "Y": {
+      "item": "kubejs:crashed_reactor_frame"
+    }
+  },
+  "result": {
+    "item": "biggerreactors:reactor_casing",
+    "count": 1
+  }
+}

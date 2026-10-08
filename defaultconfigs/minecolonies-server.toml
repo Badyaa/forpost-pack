@@ -1,0 +1,8 @@
+# Форпост / T4L0S — раздел «Рейды»: сложность выше средней, рейдеры ломают блоки и двери.
+# Forge копирует этот файл в serverconfig каждого НОВОГО мира; недостающие ключи дописываются значениями по умолчанию.
+[combat]
+	enablecolonyraids = true
+	raidDifficulty = 7
+	raidersbreakblocks = true
+	raidersbreakdoors = true
+	mobattackcitizens = true

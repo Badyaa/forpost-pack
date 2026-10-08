@@ -1,0 +1,12 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "tag": "forge:deepslate"
+  },
+  "result": [
+    {
+      "item": "exdeorum:crushed_deepslate"
+    }
+  ],
+  "experience": 0.5
+}

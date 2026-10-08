@@ -1,0 +1,738 @@
+[
+  {
+    "name": {
+      "text": "\"Awesome Reward!",
+      "isTranslationKey": false
+    },
+    "colour": "PINK",
+    "weights": [
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    "groups": [
+      {
+        "id": "7e19a541-d9f0-40e9-b497-25fc0689e960",
+        "name": {
+          "text": "Troll1",
+          "isTranslationKey": false
+        },
+        "limit": 0,
+        "items": [
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          },
+          {
+            "id": "exdeorum:wooden_hammer",
+            "Count": 1,
+            "tag": "{Damage:0}"
+          }
+        ]
+      },
+      {
+        "id": "b676fe58-54c2-47f0-a2d5-4f4f39b1cb73",
+        "name": {
+          "text": "Troll2",
+          "isTranslationKey": false
+        },
+        "limit": 1,
+        "items": [
+          {
+            "id": "simplyjetpacks:jetpack_potato",
+            "Count": 1,
+            "tag": "{Energy:1200,Insulation:[]}"
+          }
+        ]
+      },
+      {
+        "id": "458ea6e4-a57e-42ee-82d1-655ecdc63177",
+        "name": {
+          "text": "Troll3",
+          "isTranslationKey": false
+        },
+        "limit": 1,
+        "items": [
+          {
+            "id": "minecraft:ghast_spawn_egg",
+            "Count": 1,
+            "tag": "{RepairCost:0,display:{Name:\u0027{\"text\":\"Spawn Wolf\"}\u0027}}"
+          },
+          {
+            "id": "minecraft:skeleton_spawn_egg",
+            "Count": 1,
+            "tag": "{RepairCost:0,display:{Name:\u0027{\"text\":\"Spawn Sheep\"}\u0027}}"
+          },
+          {
+            "id": "minecraft:cave_spider_spawn_egg",
+            "Count": 1,
+            "tag": "{RepairCost:0,display:{Name:\u0027{\"text\":\"Spawn Mooshroom\"}\u0027}}"
+          },
+          {
+            "id": "minecraft:blaze_spawn_egg",
+            "Count": 1,
+            "tag": "{RepairCost:0,display:{Name:\u0027{\"text\":\"Spawn Horse\"}\u0027}}"
+          }
+        ]
+      },
+      {
+        "id": "d0c72cef-4165-417a-9687-86bcf3bbd644",
+        "limit": 0,
+        "items": []
+      }
+    ]
+  },
+  {
+    "name": {
+      "text": "Decor",
+      "isTranslationKey": false
+    },
+    "colour": "BLACK",
+    "weights": [
+      20,
+      10,
+      0,
+      0,
+      0
+    ],
+    "groups": [
+      {
+        "id": "53321ca8-de82-460e-a0db-c6b67b54deeb",
+        "name": {
+          "text": "Decor Group 1",
+          "isTranslationKey": false
+        },
+        "limit": 2,
+        "items": [
+          {
+            "id": "create:limestone",
+            "Count": 64
+          },
+          {
+            "id": "minecraft:granite",
+            "Count": 64
+          }
+        ]
+      },
+      {
+        "id": "739d78fa-76a3-4086-8513-78da095dd713",
+        "name": {
+          "text": "Decor Group 2",
+          "isTranslationKey": false
+        },
+        "limit": 2,
+        "items": [
+          {
+            "id": "thermal:white_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:magenta_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:orange_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:lime_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:pink_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:gray_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:light_gray_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:cyan_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:purple_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:blue_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:brown_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:green_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:red_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:black_rockwool",
+            "Count": 8
+          },
+          {
+            "id": "thermal:pink_rockwool",
+            "Count": 8
+          }
+        ]
+      },
+      {
+        "id": "26215c23-cbf0-4d1d-ab4b-2e23295a87da",
+        "name": {
+          "text": "Decor Group 3",
+          "isTranslationKey": false
+        },
+        "limit": 2,
+        "items": [
+          {
+            "id": "minecraft:cobblestone_stairs",
+            "Count": 8
+          },
+          {
+            "id": "minecraft:brick_stairs",
+            "Count": 8
+          },
+          {
+            "id": "minecraft:stone_brick_stairs",
+            "Count": 8
+          },
+          {
+            "id": "minecraft:nether_brick_stairs",
+            "Count": 8
+          },
+          {
+            "id": "minecraft:sandstone_stairs",
+            "Count": 8
+          },
+          {
+            "id": "minecraft:quartz_stairs",
+            "Count": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": {
+      "text": "Merely Ok",
+      "isTranslationKey": false
+    },
+    "colour": "BLUE",
+    "weights": [
+      50,
+      40,
+      0,
+      0,
+      0
+    ],
+    "groups": [
+      {
+        "id": "abfcab75-5788-40f6-bc8b-ca68296b6de8",
+        "name": {
+          "text": "Merely Ok Raw 1",
+          "isTranslationKey": false
+        },
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:redstone_block",
+            "Count": 1
+          },
+          {
+            "id": "minecraft:clay",
+            "Count": 2
+          },
+          {
+            "id": "minecraft:coal_block",
+            "Count": 1
+          }
+        ]
+      },
+      {
+        "id": "ab329bf5-2b64-4ce0-b153-7417b6c3e89d",
+        "name": {
+          "text": "Merely Ok Raw 2",
+          "isTranslationKey": false
+        },
+        "limit": 0,
+        "items": [
+          {
+            "id": "mekanism:dust_iron",
+            "Count": 16
+          },
+          {
+            "id": "mekanism:dust_copper",
+            "Count": 16
+          },
+          {
+            "id": "thermal:tin_dust",
+            "Count": 16
+          }
+        ]
+      },
+      {
+        "id": "8e172ab8-e587-4c10-b010-2b1742e109a7",
+        "name": {
+          "text": "Merely Ok Raw III",
+          "isTranslationKey": false
+        },
+        "limit": 4,
+        "items": [
+          {
+            "id": "minecraft:bone_meal",
+            "Count": 32
+          }
+        ]
+      },
+      {
+        "id": "8c5394f0-6b66-4361-9545-be4e04bb1a28",
+        "name": {
+          "text": "Merely Ok Water 1",
+          "isTranslationKey": false
+        },
+        "limit": 2,
+        "items": [
+          {
+            "id": "minecraft:potion",
+            "Count": 2,
+            "tag": "{Potion:\"minecraft:water\"}"
+          }
+        ]
+      },
+      {
+        "id": "0ebc19f2-662e-4454-af76-2f6d909a07cb",
+        "name": {
+          "text": "Merely Ok Water 2",
+          "isTranslationKey": false
+        },
+        "limit": 1,
+        "items": [
+          {
+            "id": "minecraft:water_bucket",
+            "Count": 1,
+            "tag": "{}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": {
+      "text": "Good",
+      "isTranslationKey": false
+    },
+    "colour": "GREEN",
+    "weights": [
+      20,
+      40,
+      30,
+      0,
+      0
+    ],
+    "groups": [
+      {
+        "id": "d1d5c0fd-5faa-450b-accf-4dfd22bd3497",
+        "name": {
+          "text": "Good Armor",
+          "isTranslationKey": false
+        },
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:iron_helmet",
+            "Count": 1,
+            "tag": "{Damage:0,Enchantments:[{id:\"minecraft:projectile_protection\",lvl:2s}],Insulation:[],RepairCost:1}"
+          },
+          {
+            "id": "minecraft:iron_chestplate",
+            "Count": 1,
+            "tag": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:2s}],Insulation:[],RepairCost:1}"
+          },
+          {
+            "id": "minecraft:iron_leggings",
+            "Count": 1,
+            "tag": "{Damage:0,Enchantments:[{id:\"minecraft:blast_protection\",lvl:2s}],Insulation:[],RepairCost:1}"
+          },
+          {
+            "id": "minecraft:iron_boots",
+            "Count": 1,
+            "tag": "{Damage:0,Enchantments:[{id:\"minecraft:feather_falling\",lvl:2s}],Insulation:[],RepairCost:1}"
+          }
+        ]
+      },
+      {
+        "id": "ac74e3b7-c1d0-4d26-837d-d91d4fbb1730",
+        "name": {
+          "text": "Good Raw 2",
+          "isTranslationKey": false
+        },
+        "limit": 0,
+        "items": [
+          {
+            "id": "thermal:gold_dust",
+            "Count": 16
+          },
+          {
+            "id": "thermal:silver_dust",
+            "Count": 16
+          },
+          {
+            "id": "mekanism:dust_lead",
+            "Count": 16
+          },
+          {
+            "id": "thermal:nickel_dust",
+            "Count": 16
+          }
+        ]
+      },
+      {
+        "id": "3f4f89d6-08d7-41ca-a932-5589d6d9c05d",
+        "name": {
+          "text": "Good Tools",
+          "isTranslationKey": false
+        },
+        "limit": 1,
+        "items": [
+          {
+            "id": "tconstruct:pickaxe",
+            "Count": 1,
+            "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\"],tic_modifiers:[{level:3,name:\"tconstruct:cultivated\"},{level:1,name:\"tconstruct:pierce\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":1.0f,\"tconstruct:attack_speed\":1.2f,\"tconstruct:durability\":60.0f,\"tconstruct:mining_speed\":0.5f},tic_volatile_data:{abilities:1,upgrades:3}}"
+          },
+          {
+            "id": "tconstruct:hand_axe",
+            "Count": 1,
+            "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\"],tic_modifiers:[{level:3,name:\"tconstruct:cultivated\"},{level:1,name:\"tconstruct:stripping\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":6.0f,\"tconstruct:attack_speed\":0.9f,\"tconstruct:durability\":60.0f,\"tconstruct:mining_speed\":0.5f},tic_volatile_data:{abilities:1,upgrades:3}}"
+          },
+          {
+            "id": "tconstruct:mattock",
+            "Count": 1,
+            "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:wood\",\"tconstruct:wood\",\"tconstruct:wood\"],tic_modifiers:[{level:3,name:\"tconstruct:cultivated\"},{level:1,name:\"tconstruct:tilling\"}],tic_multipliers:{\"tconstruct:attack_damage\":1.1f,\"tconstruct:durability\":1.25f,\"tconstruct:mining_speed\":1.1f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":1.6500001f,\"tconstruct:attack_speed\":0.9f,\"tconstruct:durability\":75.0f,\"tconstruct:mining_speed\":0.55f},tic_volatile_data:{abilities:1,upgrades:3}}"
+          }
+        ]
+      },
+      {
+        "id": "5ea83d42-2ace-4c9e-b785-f7b658583e6a",
+        "name": {
+          "text": "Good Weapons",
+          "isTranslationKey": false
+        },
+        "limit": 1,
+        "items": [
+          {
+            "id": "tconstruct:dagger",
+            "Count": 1,
+            "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:flint\",\"tconstruct:flint\"],tic_modifiers:[{level:2,name:\"tconstruct:jagged\"},{level:1,name:\"tconstruct:offhand_attack\"},{level:1,name:\"tconstruct:padded\"},{level:1,name:\"tconstruct:silky_shears\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.65f,\"tconstruct:durability\":0.75f,\"tconstruct:mining_speed\":0.75f},tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":3.03875f,\"tconstruct:attack_speed\":2.0f,\"tconstruct:block_amount\":10.0f,\"tconstruct:durability\":54.1875f,\"tconstruct:harvest_tier\":\"minecraft:stone\",\"tconstruct:mining_speed\":2.625f,\"tconstruct:use_item_speed\":1.0f},tic_volatile_data:{abilities:1,\"tconstruct:duel_wielding\":1b,upgrades:3}}"
+          },
+          {
+            "id": "tconstruct:battlesign",
+            "Count": 1,
+            "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:wood\",\"tconstruct:copper\"],tic_modifiers:[{level:1,name:\"tconstruct:cultivated\"},{level:1,name:\"tconstruct:depth_protection\"},{level:1,name:\"tconstruct:bonking\"},{level:1,name:\"tconstruct:knockback\"},{level:1,name:\"tconstruct:blocking\"}],tic_persistent:{},tic_stats:{\"tconstruct:attack_damage\":2.0f,\"tconstruct:attack_speed\":1.2f,\"tconstruct:block_amount\":50.0f,\"tconstruct:durability\":294.0f,\"tconstruct:mining_speed\":0.5f},tic_volatile_data:{abilities:1,defense:3}}"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": {
+      "text": "Very Nice!",
+      "isTranslationKey": false
+    },
+    "colour": "LIGHT_BLUE",
+    "weights": [
+      0,
+      10,
+      60,
+      0,
+      0
+    ],
+    "groups": [
+      {
+        "id": "744973f0-76ba-4682-989d-00af75722852",
+        "name": {
+          "text": "Very Nice Armor",
+          "isTranslationKey": false
+        },
+        "limit": 1,
+        "items": [
+          {
+            "id": "tconstruct:plate_helmet",
+            "Count": 1,
+            "tag": "{Damage:0,Insulation:[],tic_broken:0b,tic_materials:[\"tconstruct:steel\",\"tconstruct:steel\"],tic_modifiers:[{level:2,name:\"tconstruct:ductile\"}],tic_persistent:{},tic_stats:{\"tconstruct:armor\":2.0f,\"tconstruct:armor_toughness\":4.0f,\"tconstruct:durability\":382.80002f,\"tconstruct:projectile_damage\":2.2f},tic_volatile_data:{defense:3,upgrades:2}}"
+          },
+          {
+            "id": "tconstruct:plate_chestplate",
+            "Count": 1,
+            "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:steel\",\"tconstruct:steel\"],tic_modifiers:[{level:2,name:\"tconstruct:ductile\"}],tic_multipliers:{\"tconstruct:attack_damage\":0.4f},tic_persistent:{},tic_stats:{\"tconstruct:armor\":7.0f,\"tconstruct:armor_toughness\":4.0f,\"tconstruct:durability\":556.80005f,\"tconstruct:projectile_damage\":2.2f},tic_volatile_data:{defense:3,upgrades:2}}"
+          },
+          {
+            "id": "tconstruct:plate_leggings",
+            "Count": 1,
+            "tag": "{Damage:0,tic_broken:0b,tic_materials:[\"tconstruct:steel\",\"tconstruct:steel\"],tic_modifiers:[{level:2,name:\"tconstruct:ductile\"}],tic_persistent:{},tic_stats:{\"tconstruct:armor\":5.0f,\"tconstruct:armor_toughness\":4.0f,\"tconstruct:durability\":522.0f,\"tconstruct:projectile_damage\":2.2f},tic_volatile_data:{defense:3,upgrades:2}}"
+          },
+          {
+            "id": "tconstruct:plate_boots",
+            "Count": 1,
+            "tag": "{Damage:0,Insulation:[],tic_broken:0b,tic_materials:[\"tconstruct:steel\",\"tconstruct:steel\"],tic_modifiers:[{level:2,name:\"tconstruct:ductile\"}],tic_persistent:{},tic_stats:{\"tconstruct:armor\":2.0f,\"tconstruct:armor_toughness\":4.0f,\"tconstruct:durability\":452.40002f,\"tconstruct:projectile_damage\":2.2f},tic_volatile_data:{defense:3,upgrades:2}}"
+          }
+        ]
+      },
+      {
+        "id": "eb62a5d7-38b8-461e-b491-d4a5c26c0314",
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:nether_quartz_ore",
+            "Count": 64
+          },
+          {
+            "id": "ae2:certus_quartz_crystal",
+            "Count": 64
+          }
+        ]
+      },
+      {
+        "id": "756efebc-4d9c-46f3-acba-039ee0dae163",
+        "limit": 0,
+        "items": [
+          {
+            "id": "pneumaticcraft:compressed_iron_block",
+            "Count": 16
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": {
+      "text": "Wow",
+      "isTranslationKey": false
+    },
+    "colour": "RED",
+    "weights": [
+      0,
+      0,
+      10,
+      70,
+      40
+    ],
+    "groups": [
+      {
+        "id": "1c9bd71d-01e0-41b6-bf9d-7a61ccfc77c5",
+        "name": {
+          "text": "Wow Armor",
+          "isTranslationKey": false
+        },
+        "limit": 1,
+        "items": [
+          {
+            "id": "minecraft:diamond_helmet",
+            "Count": 1,
+            "tag": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:4s}],Insulation:[],RepairCost:1}"
+          },
+          {
+            "id": "minecraft:diamond_chestplate",
+            "Count": 1,
+            "tag": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:4s}],Insulation:[],RepairCost:1}"
+          },
+          {
+            "id": "minecraft:diamond_leggings",
+            "Count": 1,
+            "tag": "{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:4s}],Insulation:[],RepairCost:1}"
+          },
+          {
+            "id": "minecraft:diamond_boots",
+            "Count": 1,
+            "tag": "{Damage:0,Enchantments:[{id:\"minecraft:feather_falling\",lvl:4s},{id:\"minecraft:protection\",lvl:4s}],Insulation:[],RepairCost:3}"
+          }
+        ]
+      },
+      {
+        "id": "3ec305ae-d4e5-4ba3-9ebc-374fc3d0b3e9",
+        "limit": 0,
+        "items": [
+          {
+            "id": "minecraft:redstone_block",
+            "Count": 64
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": {
+      "text": "I Got What?!",
+      "isTranslationKey": false
+    },
+    "colour": "PURPLE",
+    "weights": [
+      0,
+      0,
+      0,
+      30,
+      60
+    ],
+    "groups": []
+  }
+]

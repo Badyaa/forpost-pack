@@ -1,0 +1,13 @@
+filename = "sophisticatedstoragecreateintegration-1.20.1-0.1.20.164.jar"
+name = "Sophisticated Storage Create Integration"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "43575f8a7056c0ede500055a6b47d325c3283ba2"
+mode = 'metadata:curseforge'
+
+[update]
+[update.curseforge]
+file-id = 8224099
+project-id = 1226755

@@ -1,0 +1,327 @@
+{
+  "name": "Круглый год",
+  "reputationBar": [],
+  "description": {
+    "text": "На Земле есть времена года. Зима убивает колонию быстрее рейдеров, если к ней не готовиться.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "4b883367-ef43-5308-b3a4-a7ec7f3d3b95",
+      "name": {
+        "text": "Календарь",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Serene Seasons ведёт счёт дням. Календарь покажет, сколько осталось до холодов.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "sereneseasons:calendar",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "sereneseasons:calendar",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Календарь",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите календарь Serene Seasons и повесьте в ратуше.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "5247643b-7ac2-5561-973d-92dd4837bec3"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "cold_sweat:thermometer",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "36888a50-c53b-5afd-97e6-aeb19e799c19",
+      "name": {
+        "text": "Летний урожай",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Лето — единственное время, когда поле даёт полный урожай. Заполните закрома.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:hay_block",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:wheat",
+                "Count": 64
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "64 пшеницы",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Сдайте 64 пшеницы, собранные летом.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "4b883367-ef43-5308-b3a4-a7ec7f3d3b95"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:hay_block",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2e0d81bd-16ad-5cc2-b048-67721f2ff6dd",
+      "name": {
+        "text": "Осенний запас",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Осенью колония запасается. 128 еды — норма на зиму для десяти жителей.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:bread",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:bread",
+                "Count": 64
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "minecraft:baked_potato",
+                "Count": 64
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Запас еды",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Сдайте 64 хлеба и 64 печёной картошки.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "36888a50-c53b-5afd-97e6-aeb19e799c19"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "cold_sweat:goat_fur_chestplate",
+          "Count": 1
+        },
+        {
+          "id": "cold_sweat:goat_fur_leggings",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7e25f0dd-a272-5e91-93fc-cf1c7bdc33b6",
+      "name": {
+        "text": "Первая зима",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Снег, замёрзшие поля, жители у костров. Переживите зиму, никого не потеряв.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:snow_block",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Пережить зиму",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметьте, когда зима закончится и число жителей не уменьшится.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "2e0d81bd-16ad-5cc2-b048-67721f2ff6dd"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:campfire",
+          "Count": 2
+        },
+        {
+          "id": "minecraft:coal",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f13216a7-262e-5fd7-8c00-a22a618120a6",
+      "name": {
+        "text": "Плантация",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Чтобы зима не останавливала еду, нужна плантация под крышей: тростник, бамбук, какао.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhutplantation",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutplantation",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Плантация",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте плантацию колонии и наймите плантатора.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "7e25f0dd-a272-5e91-93fc-cf1c7bdc33b6"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:sugar_cane",
+          "Count": 16
+        },
+        {
+          "id": "minecraft:bamboo",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "bcd8d282-ba2f-5bea-be40-613bb7f6d17e",
+      "name": {
+        "text": "Год прошёл",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Полный оборот: весна, лето, осень, зима. Колония выстояла.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:clock",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Полный год",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметьте, когда календарь покажет вторую весну.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "f13216a7-262e-5fd7-8c00-a22a618120a6"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:enchanted_golden_apple",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:emerald",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

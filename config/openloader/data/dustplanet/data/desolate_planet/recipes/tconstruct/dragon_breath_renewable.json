@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tconstruct:ender_slime_bottle"
+    },
+    {
+      "item": "tconstruct:dragon_scale"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "tag": "forge:gunpowder"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:dragon_breath"
+  }
+}

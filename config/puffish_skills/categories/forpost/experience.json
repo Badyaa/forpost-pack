@@ -1,0 +1,55 @@
+{
+ "experience_per_level": {
+  "type": "expression",
+  "data": {
+   "expression": "min(20 + level * 12, 300)"
+  }
+ },
+ "sources": [
+  {
+   "type": "puffish_skills:kill_entity",
+   "data": {
+    "variables": {
+     "dropped_xp": {
+      "operations": [
+       {
+        "type": "get_dropped_experience"
+       }
+      ]
+     }
+    },
+    "experience": "dropped_xp",
+    "anti_farming": {
+     "limit_per_chunk": 20,
+     "reset_after_seconds": 300
+    }
+   }
+  },
+  {
+   "type": "puffish_skills:break_block",
+   "data": {
+    "variables": {
+     "is_ore": {
+      "operations": [
+       {
+        "type": "get_broken_block_state"
+       },
+       {
+        "type": "puffish_skills:test",
+        "data": {
+         "block": "#forge:ores"
+        }
+       }
+      ]
+     }
+    },
+    "experience": [
+     {
+      "condition": "is_ore",
+      "expression": "3"
+     }
+    ]
+   }
+  }
+ ]
+}

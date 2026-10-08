@@ -1,0 +1,528 @@
+{
+  "name": "Оборона",
+  "reputationBar": [],
+  "description": {
+    "text": "Ночью на Земле не тише, чем на Талосе. Стены, стража, радар и первый рейд.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "8b418927-ad05-561b-8008-7daa26b09d72",
+      "name": {
+        "text": "Стены",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Кто-то же разрушил старую колонию. Стена — первое, что отделяет вас от повторения.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:cobblestone_wall",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cobblestone_wall",
+                "Count": 60
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Стены",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Сдайте 60 блоков стен — считается, что вы обнесли ими колонию. Рейдеры приходят к ратуше, стена должна быть замкнутой, ворота — с дверью.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "fcb2dc1b-4272-5031-9229-6a6e2ce6f47b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:cobblestone",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7d793a50-08b6-5181-b898-6d75aeb81a9c",
+      "name": {
+        "text": "Башня стражи",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Стражники живут в башне. Без неё колонию защищаете только вы.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhutguardtower",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutguardtower",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Башня стражи",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте башню стражи (небольшое здание, можно несколько). Кликните по ней → «Работник» → нанять стражника; во вкладке настроек задайте «Патруль» или «Охрана» точки.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "8b418927-ad05-561b-8008-7daa26b09d72"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:copper_ingot",
+          "Count": 16
+        },
+        {
+          "id": "minecraft:stick",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7594627b-7bf8-5287-a12a-447c1f2c0dfa",
+      "name": {
+        "text": "Двое в дозоре",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Двое стражников — ночной дозор. Стражник без меча и брони — просто житель в шлеме.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:iron_sword",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutguardtower",
+                "Count": 2
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Две башни",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Вторая башня — второй стражник.",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Снаряжение",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Положите на склад мечи, луки и броню: стражники запросят их сами. Отметьте, когда оба стражника вооружены.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "7d793a50-08b6-5181-b898-6d75aeb81a9c"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:leather_helmet",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:leather_chestplate",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:leather_leggings",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:leather_boots",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b056f484-d40b-5417-a801-216e700860ee",
+      "name": {
+        "text": "Радар",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Торнадо не спрашивает разрешения. Погодная машина Weather2 показывает штормы заранее.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "weather2:weather_forecast",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "weather2:weather_forecast",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Погодная машина",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите погодную машину — радар штормов.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "79ba3c69-276b-581d-b8d9-5f502506db49",
+        "8b418927-ad05-561b-8008-7daa26b09d72"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "weather2:tornado_siren",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "67ec3fc6-571b-5bbb-a98f-aa3e4388852c",
+      "name": {
+        "text": "Сирена",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Сирена и датчик торнадо: у жителей будет минута, чтобы спрятаться.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "weather2:tornado_siren",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "weather2:tornado_siren",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "weather2:tornado_sensor",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Сирена и датчик",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Поставьте сирену торнадо и датчик рядом с ратушей.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "b056f484-d40b-5417-a801-216e700860ee"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "torchmaster:megatorch",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:torch",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4c379fd5-25c3-588e-b092-c7ac1e542217",
+      "name": {
+        "text": "Первый рейд",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Рог. Барабаны. Мародёры увидели дым над колонией.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:crossbow",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Отбить рейд",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Рейды начинаются, когда жителей достаточно (в сборке — от 5). За день в ратуше появится предупреждение. Переживите первый рейд MineColonies и убейте не меньше 10 рейдеров. Отметьте, когда рейд отбит.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "7594627b-7bf8-5287-a12a-447c1f2c0dfa"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:iron_ingot",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "4359bed8-90b7-55f1-9da3-2b14e19d26a4",
+      "name": {
+        "text": "Мародёры ушли",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "После рейда — разбитые двери и сгоревшие крыши. Чиним.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:stone",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:stone",
+                "Count": 64
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "minecraft:oak_planks",
+                "Count": 32
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Ремонт после рейда",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Имей при себе 64 камня и 32 доски на ремонт — книга их не забирает, материалы останутся у тебя. Повреждённые здания чинятся через их окно → «Починить».",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "4c379fd5-25c3-588e-b092-c7ac1e542217"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:stone",
+          "Count": 64
+        },
+        {
+          "id": "minecraft:oak_planks",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "04c13d1d-a584-5478-aa42-7c73b3ebf792",
+      "name": {
+        "text": "Казарма",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Башни хороши, но казарма обучает целый гарнизон и открывает башни казармы.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 80,
+      "icon": {
+        "id": "minecolonies:blockhutbarracks",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutbarracks",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Казарма",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте казарму. Это крупное здание: строителю понадобится уровень и много камня.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "4c379fd5-25c3-588e-b092-c7ac1e542217",
+        "e2acb551-ec30-502c-bdee-afb23992904b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:iron_sword",
+          "Count": 2
+        },
+        {
+          "id": "minecraft:bow",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e48daa24-1319-59ab-b720-bf941c018d4b",
+      "name": {
+        "text": "Лазарет",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Раненые и больные лечатся в больнице колонии. Открывает финальные главы.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 80,
+      "icon": {
+        "id": "minecolonies:blockhuthospital",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhuthospital",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Больница",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте больницу и наймите врача. Ему нужны зелья и еда.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "4c379fd5-25c3-588e-b092-c7ac1e542217"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "kubejs:bandage",
+          "Count": 8
+        },
+        {
+          "id": "minecraft:golden_apple",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

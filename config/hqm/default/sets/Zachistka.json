@@ -1,0 +1,634 @@
+{
+  "name": "Зачистка",
+  "reputationBar": [],
+  "description": {
+    "text": "Талос не пуст: под пылью — подземелья, в песках — пирамида, ночью — твари, каких не было на Земле.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "76272701-fb13-512a-ac9c-54df43522aeb",
+      "name": {
+        "text": "Кости под пылью",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Глубоко под дюнами — залы, полные скелетов. Стрелы летят из темноты. Найдите подземелье и вычистите его.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:skeleton_skull",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:kill",
+          "description": {
+            "text": "Скелеты",
+            "isTranslationKey": false
+          },
+          "mobs": [
+            {
+              "name": {
+                "text": "Скелет",
+                "isTranslationKey": false
+              },
+              "mob": "minecraft:skeleton",
+              "kills": 40,
+              "icon": {
+                "id": "minecraft:bone",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Подземелье скелетов YUNG лежит на глубине −30…−50. Ищите каменные залы с факелами. Убейте 40 скелетов.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "cdac0984-204e-4fbc-b2cd-cea990ae0367"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:bow",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:arrow",
+          "Count": 64
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9ec872a0-d5b6-5da1-a403-a5ca82034c7f",
+      "name": {
+        "text": "Гниль",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Заброшенный склеп у поверхности, гробы и надгробия. То, что в них лежало, уже не лежит.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:zombie_head",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:kill",
+          "description": {
+            "text": "Зомби",
+            "isTranslationKey": false
+          },
+          "mobs": [
+            {
+              "name": {
+                "text": "Зомби",
+                "isTranslationKey": false
+              },
+              "mob": "minecraft:zombie",
+              "kills": 40,
+              "icon": {
+                "id": "minecraft:rotten_flesh",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Подземелье зомби YUNG находится у поверхности (y≈50), вход — каменная башенка. Убейте 40 зомби.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "cdac0984-204e-4fbc-b2cd-cea990ae0367"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:iron_ingot",
+          "Count": 8
+        },
+        {
+          "id": "minecraft:shield",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "22dd5967-3534-545b-8122-c72d606cc619",
+      "name": {
+        "text": "Паутина",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Гнездо в норах под песком. Паутина, яйца и тысячи лап.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:cobweb",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:kill",
+          "description": {
+            "text": "Пауки",
+            "isTranslationKey": false
+          },
+          "mobs": [
+            {
+              "name": {
+                "text": "Паук",
+                "isTranslationKey": false
+              },
+              "mob": "minecraft:spider",
+              "kills": 20,
+              "icon": {
+                "id": "minecraft:string",
+                "Count": 1
+              }
+            },
+            {
+              "name": {
+                "text": "Пещерный паук",
+                "isTranslationKey": false
+              },
+              "mob": "minecraft:cave_spider",
+              "kills": 10,
+              "icon": {
+                "id": "minecraft:fermented_spider_eye",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Паучье подземелье YUNG — сеть нор под поверхностью. Убейте 20 пауков и 10 пещерных.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "cdac0984-204e-4fbc-b2cd-cea990ae0367"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:string",
+          "Count": 32
+        },
+        {
+          "id": "minecraft:milk_bucket",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3e16a306-2cfb-50ec-9ac7-5d39aebbd3e8",
+      "name": {
+        "text": "Старая шахта",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Кто-то копал здесь до вас. Рельсы, вагонетки и сундуки остались.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:rail",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:rail",
+                "Count": 16
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Рельсы",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Найдите заброшенную шахту (YUNG Better Mineshafts) и принесите 16 рельсов из неё.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "cdac0984-204e-4fbc-b2cd-cea990ae0367"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:chest_minecart",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:powered_rail",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "94f7bf2f-9880-5fed-a17b-064783462312",
+      "name": {
+        "text": "Небесный камень",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Метеориты падали на Талос веками. Внутри — небесный камень и прессы для гравировщика.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "ae2:sky_stone_block",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "ae2:sky_stone_block",
+                "Count": 16
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Небесный камень",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Найдите кратер метеорита AE2 (метеоритный компас укажет путь) и добудьте 16 блоков небесного камня.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "9964c1f7-b9fa-4423-8266-c8f98b046455"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "ae2:certus_quartz_crystal",
+          "Count": 16
+        },
+        {
+          "id": "ae2:meteorite_compass",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5944d966-a99e-5c61-b402-a9668a321e78",
+      "name": {
+        "text": "Особые твари",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "На Талосе мутируют даже зомби: огненные, ядовитые, гигантские. Охота — лучшая разведка. Рядом с базой (7 чанков) такие твари не появляются — ищи дальше.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:creeper_head",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:kill",
+          "description": {
+            "text": "Мутанты",
+            "isTranslationKey": false
+          },
+          "mobs": [
+            {
+              "name": {
+                "text": "Огненный крипер",
+                "isTranslationKey": false
+              },
+              "mob": "specialmobs:firecreeper",
+              "kills": 5,
+              "icon": {
+                "id": "minecraft:fire_charge",
+                "Count": 1
+              }
+            },
+            {
+              "name": {
+                "text": "Плаг-зомби",
+                "isTranslationKey": false
+              },
+              "mob": "specialmobs:plaguezombie",
+              "kills": 5,
+              "icon": {
+                "id": "minecraft:rotten_flesh",
+                "Count": 1
+              }
+            },
+            {
+              "name": {
+                "text": "Ядовитый скелет",
+                "isTranslationKey": false
+              },
+              "mob": "specialmobs:poisonskeleton",
+              "kills": 5,
+              "icon": {
+                "id": "minecraft:spider_eye",
+                "Count": 1
+              }
+            },
+            {
+              "name": {
+                "text": "Огненный паук",
+                "isTranslationKey": false
+              },
+              "mob": "specialmobs:firespider",
+              "kills": 5,
+              "icon": {
+                "id": "minecraft:blaze_powder",
+                "Count": 1
+              }
+            },
+            {
+              "name": {
+                "text": "Мини-крипер",
+                "isTranslationKey": false
+              },
+              "mob": "specialmobs:minicreeper",
+              "kills": 5,
+              "icon": {
+                "id": "minecraft:gunpowder",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Особые мобы Special Mobs выглядят как обычные, но с другим цветом и способностями. Убейте по 5 каждого вида.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "cdac0984-204e-4fbc-b2cd-cea990ae0367"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:diamond",
+          "Count": 2
+        },
+        {
+          "id": "minecraft:golden_apple",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "16a3b422-d112-56cb-821a-bb5c263a20a3",
+      "name": {
+        "text": "Тяжеловесы",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Гиганты и бруты — редкие, но каждый стоит десятка обычных. Рядом с базой (7 чанков) такие твари не появляются — ищи дальше.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:iron_axe",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:kill",
+          "description": {
+            "text": "Гиганты",
+            "isTranslationKey": false
+          },
+          "mobs": [
+            {
+              "name": {
+                "text": "Гигантский зомби",
+                "isTranslationKey": false
+              },
+              "mob": "specialmobs:giantzombie",
+              "kills": 3,
+              "icon": {
+                "id": "minecraft:zombie_head",
+                "Count": 1
+              }
+            },
+            {
+              "name": {
+                "text": "Гигантский скелет",
+                "isTranslationKey": false
+              },
+              "mob": "specialmobs:giantskeleton",
+              "kills": 3,
+              "icon": {
+                "id": "minecraft:skeleton_skull",
+                "Count": 1
+              }
+            },
+            {
+              "name": {
+                "text": "Брут-зомби",
+                "isTranslationKey": false
+              },
+              "mob": "specialmobs:brutezombie",
+              "kills": 5,
+              "icon": {
+                "id": "minecraft:iron_sword",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Убейте 3 гигантских зомби, 3 гигантских скелета и 5 брутов.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "5944d966-a99e-5c61-b402-a9668a321e78"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:netherite_scrap",
+          "Count": 2
+        },
+        {
+          "id": "minecraft:enchanted_golden_apple",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "2abca123-f0f1-56e7-bf9b-24960de50dcf",
+      "name": {
+        "text": "Кобольтоны",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Мелкие ящеры в песках воруют всё, что блестит. Их логово рядом с пирамидой.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 80,
+      "icon": {
+        "id": "cataclysm:koboleton_bone",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:kill",
+          "description": {
+            "text": "Кобольтоны",
+            "isTranslationKey": false
+          },
+          "mobs": [
+            {
+              "name": {
+                "text": "Кобольтон",
+                "isTranslationKey": false
+              },
+              "mob": "cataclysm:koboleton",
+              "kills": 15,
+              "icon": {
+                "id": "cataclysm:koboleton_bone",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Убейте 15 кобольтонов Cataclysm — они спавнятся в пустыне и у проклятой пирамиды.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "cdac0984-204e-4fbc-b2cd-cea990ae0367"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:gold_ingot",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "dc9061cb-b992-50ae-b22e-8cb3918b3cc6",
+      "name": {
+        "text": "Проклятая пирамида",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Под пирамидой спит Древний Остаток. Это босс — не идите без брони, зелий и друзей.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 80,
+      "icon": {
+        "id": "cataclysm:desert_eye",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:kill",
+          "description": {
+            "text": "Древний Остаток",
+            "isTranslationKey": false
+          },
+          "mobs": [
+            {
+              "name": {
+                "text": "Древний Остаток",
+                "isTranslationKey": false
+              },
+              "mob": "cataclysm:ancient_remnant",
+              "kills": 1,
+              "icon": {
+                "id": "cataclysm:ancient_metal_ingot",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Проклятая пирамида Cataclysm генерируется раз на несколько километров. Внутри ловушки, песчаные бури и кобольтоны; в глубине — Древний Остаток. Убейте его.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "2abca123-f0f1-56e7-bf9b-24960de50dcf",
+        "16a3b422-d112-56cb-821a-bb5c263a20a3"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "cataclysm:ancient_metal_ingot",
+          "Count": 4
+        },
+        {
+          "id": "minecraft:netherite_ingot",
+          "Count": 2
+        },
+        {
+          "id": "minecraft:totem_of_undying",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

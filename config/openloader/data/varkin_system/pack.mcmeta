@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Talos — вторая планета сборки Форпост / T4L0S",
+    "pack_format": 15,
+    "supported_formats": [15, 26]
+  }
+}

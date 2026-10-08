@@ -1,0 +1,17 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 1,
+      "item": "pneumaticcraft:ingot_iron_compressed"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:tnt"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "cgm:grenade"
+  }
+}

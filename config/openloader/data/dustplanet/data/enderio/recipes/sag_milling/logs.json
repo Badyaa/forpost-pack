@@ -1,0 +1,50 @@
+{
+  "type": "enderio:sag_milling",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:silicon"
+      }
+    }
+  ],
+  "energy": 2400,
+  "input": {
+    "tag": "minecraft:logs"
+  },
+  "outputs": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 3,
+        "tag": "forge:dusts/wood"
+      },
+      "optional": false
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "tag": "forge:dusts/wood"
+      },
+      "optional": false
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "tag": "forge:dusts/wood"
+      },
+      "optional": false
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "tag": "forge:dusts/wood"
+      },
+      "optional": false
+    }
+  ]
+}

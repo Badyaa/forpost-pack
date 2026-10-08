@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "pneumaticcraft:printed_circuit_board"
+        }
+    ],
+    "result": {
+        "count": 4,
+        "item": "kubejs:pcb_segment"
+    }
+}

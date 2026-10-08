@@ -1,0 +1,13 @@
+name = "Форпост"
+author = "Vadim"
+version = "1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "fdf3dbb8516c682b3c4b6ccff9cebdd0f0e05973638a42436deb1705264287c4"
+
+[versions]
+forge = "47.4.20"
+minecraft = "1.20.1"

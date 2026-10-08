@@ -1,0 +1,514 @@
+{
+ "mayor_1": {
+  "title": "Голос колонии",
+  "description": "Удача +1. Мэра слушают — и предметы из сундуков и добычи чуть щедрее.",
+  "icon": {
+   "type": "effect",
+   "data": {
+    "effect": "minecraft:luck"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.luck",
+     "value": 1,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "mayor_2": {
+  "title": "Крепкое здоровье",
+  "description": "+1 сердце.",
+  "icon": {
+   "type": "effect",
+   "data": {
+    "effect": "minecraft:health_boost"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.max_health",
+     "value": 2,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "mayor_3": {
+  "title": "Быстрый шаг",
+  "description": "+5% к скорости ходьбы — колония большая, а дел много.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:leather_boots"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.movement_speed",
+     "value": 0.05,
+     "operation": "multiply_base"
+    }
+   }
+  ]
+ },
+ "mayor_4": {
+  "title": "Удача торговца",
+  "description": "Удача +2.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:emerald"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.luck",
+     "value": 2,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "mayor_5": {
+  "title": "Второе дыхание",
+  "description": "+15% к получаемому лечению.",
+  "icon": {
+   "type": "effect",
+   "data": {
+    "effect": "minecraft:regeneration"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "attributeslib:healing_received",
+     "value": 0.15,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "mayor_6": {
+  "title": "Опыт лидера",
+  "description": "+15% опыта с мобов и блоков.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:experience_bottle"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "attributeslib:experience_gained",
+     "value": 0.15,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "mayor_7": {
+  "title": "Толстая кожа",
+  "description": "Броня +2.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:leather_chestplate"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.armor",
+     "value": 2,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "mayor_8": {
+  "title": "Сердце колонии",
+  "description": "+2 сердца и удача +1.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:golden_apple"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.max_health",
+     "value": 4,
+     "operation": "addition"
+    }
+   },
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.luck",
+     "value": 1,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "smith_1": {
+  "title": "Крепкий хват",
+  "description": "Урон +1.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:iron_sword"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.attack_damage",
+     "value": 1,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "smith_2": {
+  "title": "Прочная кожа",
+  "description": "Броня +2.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:iron_chestplate"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.armor",
+     "value": 2,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "smith_3": {
+  "title": "Точный удар",
+  "description": "Шанс крита +5%.",
+  "icon": {
+   "type": "effect",
+   "data": {
+    "effect": "minecraft:strength"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "attributeslib:crit_chance",
+     "value": 0.05,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "smith_4": {
+  "title": "Тяжёлая рука",
+  "description": "Урон +2.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:diamond_sword"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.attack_damage",
+     "value": 2,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "smith_5": {
+  "title": "Быстрый замах",
+  "description": "Скорость атаки +10%.",
+  "icon": {
+   "type": "effect",
+   "data": {
+    "effect": "minecraft:haste"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.attack_speed",
+     "value": 0.1,
+     "operation": "multiply_base"
+    }
+   }
+  ]
+ },
+ "smith_6": {
+  "title": "Закалка",
+  "description": "Прочность брони +2.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:netherite_chestplate"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.armor_toughness",
+     "value": 2,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "smith_7": {
+  "title": "Смертельный удар",
+  "description": "Урон крита +25%.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:netherite_sword"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "attributeslib:crit_damage",
+     "value": 0.25,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "smith_8": {
+  "title": "Мастер-кузнец",
+  "description": "Урон +3 и сопротивление отбрасыванию +20%.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:netherite_ingot"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.attack_damage",
+     "value": 3,
+     "operation": "addition"
+    }
+   },
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.knockback_resistance",
+     "value": 0.2,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "eng_1": {
+  "title": "Ловкие руки",
+  "description": "Скорость добычи +10%.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:iron_pickaxe"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "attributeslib:mining_speed",
+     "value": 0.1,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "eng_2": {
+  "title": "Длинные руки",
+  "description": "Дальность взаимодействия с блоками +1.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:stick"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "forge:block_reach",
+     "value": 1,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "eng_3": {
+  "title": "Быстрые ноги",
+  "description": "+10% к скорости ходьбы.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:iron_boots"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.movement_speed",
+     "value": 0.1,
+     "operation": "multiply_base"
+    }
+   }
+  ]
+ },
+ "eng_4": {
+  "title": "Опытный шахтёр",
+  "description": "Скорость добычи +20%.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:diamond_pickaxe"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "attributeslib:mining_speed",
+     "value": 0.2,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "eng_5": {
+  "title": "Дальний захват",
+  "description": "Дальность взаимодействия с сущностями +1.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:lead"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "forge:entity_reach",
+     "value": 1,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "eng_6": {
+  "title": "Инженерная смекалка",
+  "description": "+20% опыта.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:enchanted_book"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "attributeslib:experience_gained",
+     "value": 0.2,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "eng_7": {
+  "title": "Стальные нервы",
+  "description": "+1 сердце и броня +1.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:iron_ingot"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.max_health",
+     "value": 2,
+     "operation": "addition"
+    }
+   },
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "generic.armor",
+     "value": 1,
+     "operation": "addition"
+    }
+   }
+  ]
+ },
+ "eng_8": {
+  "title": "Главный инженер",
+  "description": "Скорость добычи +30% и дальность +1.",
+  "icon": {
+   "type": "item",
+   "data": {
+    "item": "minecraft:netherite_pickaxe"
+   }
+  },
+  "rewards": [
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "attributeslib:mining_speed",
+     "value": 0.3,
+     "operation": "addition"
+    }
+   },
+   {
+    "type": "puffish_skills:attribute",
+    "data": {
+     "attribute": "forge:block_reach",
+     "value": 1,
+     "operation": "addition"
+    }
+   }
+  ]
+ }
+}

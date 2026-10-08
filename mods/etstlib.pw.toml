@@ -1,0 +1,13 @@
+filename = "etstlib-3.0.0-beta.20.jar"
+name = "EtSTLib"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/H9Ib63lK/versions/W2PiDcLk/etstlib-3.0.0-beta.20.jar"
+hash-format = "sha512"
+hash = "b2eb5a62348a2f383e2cfa0ed4f6298f8f2403687bcfe6cf4805cb4251fdbfdf50637e4cac40d19d7b75140ea827e69df41e7aaa3a3db30be8511c28187ad45c"
+
+[update]
+[update.modrinth]
+mod-id = "H9Ib63lK"
+version = "W2PiDcLk"

@@ -1,0 +1,21 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 1,
+      "item": "pneumaticcraft:ingot_iron_compressed"
+    },
+    {
+      "count": 4,
+      "tag": "forge:gunpowder"
+    },
+    {
+      "count": 4,
+      "tag": "forge:dusts/glowstone"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "cgm:stun_grenade"
+  }
+}

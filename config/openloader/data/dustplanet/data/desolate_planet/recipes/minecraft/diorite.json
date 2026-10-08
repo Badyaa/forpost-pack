@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "tag": "ae2:all_quartz_and_quartz_dust"
+    },
+    {
+      "tag": "ae2:all_quartz_and_quartz_dust"
+    }
+  ],
+  "result": {
+    "item": "minecraft:granite"
+  }
+}

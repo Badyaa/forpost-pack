@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Форпост — руда только на глубине (ниже y=0)",
+    "pack_format": 15,
+    "supported_formats": [15, 26]
+  }
+}

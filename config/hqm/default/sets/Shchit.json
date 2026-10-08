@@ -1,0 +1,369 @@
+{
+  "name": "Щит",
+  "reputationBar": [],
+  "description": {
+    "text": "Финал: купол дефлекторов, реактор, тридцать жителей и памятник тем, кто не вернулся.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "d31da99a-e34a-51a2-8bba-a87bc0983329",
+      "name": {
+        "text": "Дефлектор",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Штормы Weather2 ломают то, что рейдеры не смогли. Дефлектор отводит бурю от колонии.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "weather2:weather_deflector",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "weather2:weather_deflector",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Weather Deflector",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Рецепт сборки: 4 схемы Mekanism, 2 инженерных процессора AE2, 2 стальных корпуса и погодный предмет.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "e48daa24-1319-59ab-b720-bf941c018d4b",
+        "0ccea867-279e-518a-a6ca-5b5c179d68a5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "weather2:weather_deflector",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "573a7ebc-2652-50ce-b7ad-3f268c6344c5",
+      "name": {
+        "text": "Купол",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Один дефлектор закрывает центр. Купол — когда штормы обходят всю колонию.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:beacon",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Купол",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Покройте дефлекторами всю территорию колонии. Отметьте, когда ни один шторм не заходит внутрь стен.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "d31da99a-e34a-51a2-8bba-a87bc0983329"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:enchanted_book",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d3afda90-d1c6-5bd1-acc4-388ac3f3b46a",
+      "name": {
+        "text": "Тридцать голосов",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Тридцать жителей и счастье выше восьми. Это уже город.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:bell",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "30 жителей",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметьте, когда в ратуше 30 жителей со счастьем выше 8.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "573a7ebc-2652-50ce-b7ad-3f268c6344c5",
+        "61e15ec4-20f3-5877-b344-489aa71fd347"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "megacells:item_storage_cell_16m",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "36a1b160-b5f7-50f2-b04e-ef6fe8a942a8",
+      "name": {
+        "text": "Реактор",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Городу нужна энергия, которой не дадут ветряки. Реактор Bigger Reactors — ответ.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "biggerreactors:reactor_terminal",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "biggerreactors:reactor_terminal",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "biggerreactors:reactor_fuel_rod",
+                "Count": 4
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "biggerreactors:reactor_control_rod",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Реактор",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Терминал, минимум 4 топливных стержня и 1 управляющий. Соберите работающий реактор.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "c581ce97-84e4-59c5-8472-de846e736773"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "biggerreactors:uranium_ingot",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1352137d-e7b1-5c8d-8509-6c130cc005f8",
+      "name": {
+        "text": "Ранец",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Реактивный ранец Create — стены больше не мешают.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "create_jetpack:jetpack",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "create_jetpack:jetpack",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Create Jetpack",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Соберите реактивный ранец.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "36a1b160-b5f7-50f2-b04e-ef6fe8a942a8"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "create:copper_backtank",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3190ca46-ae41-5c27-ad0f-3c82e4bf35e4",
+      "name": {
+        "text": "Голос Талоса",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Талос научил вас выживать. Привезите с него 16 блоков пластали — материала, которого нет на Земле.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "varkin_system:white_plasteel_block",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "varkin_system:white_plasteel_block",
+                "Count": 16
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Пласталь",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Сдайте 16 блоков белой пластали Varkin System, привезённых с Талоса.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "d3afda90-d1c6-5bd1-acc4-388ac3f3b46a"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "varkin_system:gray_plasteel_block",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7ec9b13e-95f8-515d-bd95-8bafc782be2b",
+      "name": {
+        "text": "Памятник колонии",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Памятник из пластали в центре колонии — тем, кто не дождался. Сборка пройдена.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:nether_star",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Памятник",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Поставьте памятник из пластали в центре колонии. Отметьте — это финал.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "3190ca46-ae41-5c27-ad0f-3c82e4bf35e4",
+        "1352137d-e7b1-5c8d-8509-6c130cc005f8",
+        "573a7ebc-2652-50ce-b7ad-3f268c6344c5"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:nether_star",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:totem_of_undying",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "name": "Экспедиции",
+  "reputationBar": [],
+  "description": {
+    "text": "За стеной колонии — деревни, Незер, океан и Край. Вылазки за тем, чего нет дома.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "ce1ef0e7-ac1b-55c4-986c-996a4f2c18d8",
+      "name": {
+        "text": "За стеной",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Разведайте окрестности: где-то есть деревни и крепости, которые пережили катастрофу.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:map",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Найти деревню",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Найдите деревню или крепость в 500+ блоках от колонии. Отметьте галочку.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "7d793a50-08b6-5181-b898-6d75aeb81a9c"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:map",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:compass",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5b0d0bcd-b1c4-5e16-979a-fd0552e45b76",
+      "name": {
+        "text": "Незер",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Портал открыт. Незер — кварц, стержни ифрита и кобальт для Tinkers.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:obsidian",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:quartz",
+                "Count": 16
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "16 кварца",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте портал и вернитесь с 16 кварца.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ce1ef0e7-ac1b-55c4-986c-996a4f2c18d8"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:magma_cream",
+          "Count": 4
+        },
+        {
+          "id": "minecraft:obsidian",
+          "Count": 10
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3a6a7474-b8ad-5d4e-b7fe-24a6b37c0b3d",
+      "name": {
+        "text": "Кобальт",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Кобальтовая руда Tinkers лежит только в Незере. Из неё — лучшие инструменты.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "tconstruct:raw_cobalt",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "tconstruct:raw_cobalt",
+                "Count": 8
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Кобальт",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Добудьте 8 сырого кобальта в Незере.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "5b0d0bcd-b1c4-5e16-979a-fd0552e45b76"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "tconstruct:blank_sand_cast",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "672b512b-053e-5207-8855-c277b7452d5e",
+      "name": {
+        "text": "Крепость",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Адская крепость: ифриты, стержни, скелеты-иссушители.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:blaze_rod",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:blaze_rod",
+                "Count": 4
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Стержни ифрита",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Найдите адскую крепость и вернитесь с 4 стержнями ифрита.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "5b0d0bcd-b1c4-5e16-979a-fd0552e45b76"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:netherite_scrap",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c678f4fe-23cf-50e2-a4e6-5aba15f76b90",
+      "name": {
+        "text": "Древний город",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Глубоко под землёй, в тьме — древний город и Хранитель. Тихо.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:echo_shard",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:echo_shard",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Эхо-осколок",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Найдите древний город и принесите эхо-осколок.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ce1ef0e7-ac1b-55c4-986c-996a4f2c18d8"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:recovery_compass",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9f0022e6-b512-5679-98be-2bb69430c895",
+      "name": {
+        "text": "Океан",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Подводный монумент, стражи и призмарин.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:prismarine_shard",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:prismarine_shard",
+                "Count": 8
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Призмарин",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Найдите океанский монумент, вернитесь с 8 осколками призмарина.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ce1ef0e7-ac1b-55c4-986c-996a4f2c18d8"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:trident",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "93be7a57-0caf-55dc-876a-0e85582b8d1d",
+      "name": {
+        "text": "Иссушитель",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Три черепа, песок душ. Звезда Незера стоит того.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:wither_skeleton_skull",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:kill",
+          "description": {
+            "text": "Убить Иссушителя",
+            "isTranslationKey": false
+          },
+          "mobs": [
+            {
+              "name": {
+                "text": "Иссушитель",
+                "isTranslationKey": false
+              },
+              "mob": "minecraft:wither",
+              "kills": 1,
+              "icon": {
+                "id": "minecraft:wither_skeleton_skull",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Призовите и убейте Иссушителя. Подальше от колонии.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "672b512b-053e-5207-8855-c277b7452d5e"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:nether_star",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8b75add2-9765-529f-9684-f09006b69272",
+      "name": {
+        "text": "Край",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Крепость, портал, Дракон. Последняя экспедиция.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:dragon_egg",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:kill",
+          "description": {
+            "text": "Убить Дракона Края",
+            "isTranslationKey": false
+          },
+          "mobs": [
+            {
+              "name": {
+                "text": "Дракон Края",
+                "isTranslationKey": false
+              },
+              "mob": "minecraft:ender_dragon",
+              "kills": 1,
+              "icon": {
+                "id": "minecraft:dragon_head",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Найдите крепость, откройте портал и убейте Дракона.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "93be7a57-0caf-55dc-876a-0e85582b8d1d",
+        "c678f4fe-23cf-50e2-a4e6-5aba15f76b90"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:elytra",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:shulker_shell",
+          "Count": 4
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

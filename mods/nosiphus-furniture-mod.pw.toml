@@ -1,0 +1,13 @@
+filename = "nfm-2025.09.20a-1.20.1.jar"
+name = "MrCrayFish's Furniture Mod (Legacy Continued) + Nosiphus Furniture Mod"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ed76cfb172a370919ebfd0143369fdea37c6fc18"
+mode = 'metadata:curseforge'
+
+[update]
+[update.curseforge]
+file-id = 7015794
+project-id = 593876

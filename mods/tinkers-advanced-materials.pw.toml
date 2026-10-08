@@ -1,0 +1,13 @@
+filename = "tinkers_advanced_materials-3.0.0-beta.3.jar"
+name = "Tinkers' Advanced-Materials"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/kzojwHIn/versions/Ed3uXa5l/tinkers_advanced_materials-3.0.0-beta.3.jar"
+hash-format = "sha512"
+hash = "44e6beefd5fb453ea5da1f99772d54739ff25f24bae0bd5a7f06a1400f194061276c008c7419720913d1c2f337b7aba224892f5e0b3f17f5a64f337d5f118b2d"
+
+[update]
+[update.modrinth]
+mod-id = "kzojwHIn"
+version = "Ed3uXa5l"

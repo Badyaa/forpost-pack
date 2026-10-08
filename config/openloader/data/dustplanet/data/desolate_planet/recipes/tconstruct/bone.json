@@ -1,0 +1,10 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "minecraft:bone_meal"
+  },
+  "material": "tconstruct:bone",
+  "needed": 1,
+  "value": 1
+}
+

@@ -1,0 +1,376 @@
+{
+  "name": "Торговля",
+  "reputationBar": [],
+  "description": {
+    "text": "Create: Numismatics — монеты, банк и торговые автоматы для колонии и друзей.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "2f8a611c-9427-57ab-9e34-bb7694aa6cec",
+      "name": {
+        "text": "Первая монета",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Монеты Numismatics штампуются механическим прессом Create. Самая мелкая — шпора.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "numismatics:spur",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "create:mechanical_press",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Пресс",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Механический пресс уже знаком по Талосу.",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "numismatics:spur",
+                "Count": 16
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "16 шпор",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отштампуйте 16 монет-шпор (рецепт в JEI) и сдайте.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ba2c7bd6-1db6-5699-89a7-35b760423a02"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "numismatics:bevel",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0220f5ef-059d-546d-9e03-0e23b0dced40",
+      "name": {
+        "text": "Банк",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Банковский терминал хранит монеты на счёте, а карта открывает его из любого автомата.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "numismatics:bank_terminal",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "numismatics:bank_terminal",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Банковский терминал",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Поставьте банковский терминал, кликните по нему и создайте счёт. Получите карту счёта.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "2f8a611c-9427-57ab-9e34-bb7694aa6cec"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "numismatics:sprocket",
+          "Count": 4
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d8ea69cf-4b88-546a-8674-a2a8af6c0723",
+      "name": {
+        "text": "Торговый автомат",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Автомат продаёт что угодно за монеты — друзьям, гостям, самому себе с другого склада.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "numismatics:vendor",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "numismatics:vendor",
+                "Count": 2
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Автомат",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите два торговых автомата.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "0220f5ef-059d-546d-9e03-0e23b0dced40"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "numismatics:cog",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "8c2f3769-723a-50cf-8e8c-f926843b8e72",
+      "name": {
+        "text": "Лавка",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Настройте автомат на продажу еды: положите товар, задайте цену, привяжите карту.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:bread",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Продажа еды",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Настройте автомат: товар — хлеб, цена — 2 шпоры. Отметьте, когда первая покупка прошла.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "d8ea69cf-4b88-546a-8674-a2a8af6c0723"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "numismatics:cog",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "90e95d70-2e89-5cbf-9ee0-ae9e2e4adada",
+      "name": {
+        "text": "Склад уровня 2",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Торговля требует логистики: склад побольше и второй курьер.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhutdeliveryman",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Склад уровня 2",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Улучшите склад колонии до уровня 2 и наймите второго курьера.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "0220f5ef-059d-546d-9e03-0e23b0dced40",
+        "e2acb551-ec30-502c-bdee-afb23992904b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "sophisticatedbackpacks:backpack",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e39074e8-5e6c-5758-86ce-b65abb91512b",
+      "name": {
+        "text": "Караван",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Два склада, один маршрут: 8 стаков ресурсов вагонеткой или поездом.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:chest_minecart",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Груз доставлен",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отправьте вагонетку с сундуком или вагон поезда с 8 стаками ресурсов между двумя складами. Отметьте по прибытии.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "90e95d70-2e89-5cbf-9ee0-ae9e2e4adada"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:chest_minecart",
+          "Count": 2
+        },
+        {
+          "id": "minecraft:powered_rail",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ae682e72-576a-5bc3-a528-f434cd119d06",
+      "name": {
+        "text": "Казна",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Тысяча монет на счету колонии — можно строить ратушу третьего уровня.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 80,
+      "icon": {
+        "id": "numismatics:crown",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "numismatics:crown",
+                "Count": 2
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Две короны",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Сдайте 2 короны (по 512 шпор каждая) — казна колонии.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "8c2f3769-723a-50cf-8e8c-f926843b8e72"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:emerald_block",
+          "Count": 4
+        },
+        {
+          "id": "minecraft:diamond",
+          "Count": 4
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+ServerEvents.tags('item', event => {
+    event.add('forge:nuggets/conductive',
+        '#forge:nuggets/copper',
+        '#forge:nuggets/electrum',
+        '#forge:nuggets/gold',
+        '#forge:nuggets/silver'
+    )
+    event.add('forge:ingots/conductive',
+        '#forge:ingots/copper',
+        '#forge:ingots/electrum',
+        '#forge:ingots/gold',
+        '#forge:ingots/silver'
+    )
+    event.add('forge:storage_blocks/conductive',
+        '#forge:storage_blocks/copper',
+        '#forge:storage_blocks/electrum',
+        '#forge:storage_blocks/gold',
+        '#forge:storage_blocks/silver'
+    )
+    event.add('forge:dusts/conductive',
+        '#forge:dusts/copper',
+        '#forge:dusts/electrum',
+        '#forge:dusts/gold',
+        '#forge:dusts/silver'
+    )
+    event.add('forge:plates/conductive',
+        '#forge:plates/copper',
+        '#forge:plates/electrum',
+        '#forge:plates/gold',
+        '#forge:plates/silver'
+    )
+});

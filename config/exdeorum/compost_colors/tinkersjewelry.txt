@@ -1,0 +1,13 @@
+// Compost colors for tinkersjewelry. You may add your own colors, change existing ones, or remove colors that aren't needed.
+book, #da6c6b
+calcite, #ffb91e
+eudialyte, #c97579
+fire_opal, #ffa287
+malachite, #2fb575
+merlinite, #65658a
+milky_quartz, #fffeff
+plain_ring_cast, #ffff89
+plain_ring_red_sand_cast, #ff942f
+plain_ring_sand_cast, #ffffe7
+prehnite, #98e34a
+rubellite, #ff7ad4

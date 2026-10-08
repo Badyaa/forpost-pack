@@ -1,0 +1,11 @@
+{
+  "type": "varkin_system:earth",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "varkin_system:earth",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "preset": "minecraft:overworld"
+    }
+  }
+}

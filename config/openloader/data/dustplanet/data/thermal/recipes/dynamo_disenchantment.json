@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "thermal:rf_coil"
+    },
+    "G": {
+      "tag": "forge:gears/silver"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "X": {
+      "item": "thermal:machine_frame"
+    },
+    "Y": {
+      "item": "minecraft:experience_bottle"
+    }
+  },
+  "pattern": [
+    " C ",
+    "IGI",
+    "YXY"
+  ],
+  "result": {
+    "item": "thermal:dynamo_disenchantment"
+  },
+  "show_notification": true
+}

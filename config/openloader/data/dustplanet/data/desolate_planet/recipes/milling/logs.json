@@ -1,0 +1,27 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "minecraft:logs"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 3,
+      "item": "thermal:sawdust"
+    },
+    {
+      "chance": 0.5,
+      "item": "thermal:sawdust"
+    },
+    {
+      "chance": 0.5,
+      "item": "thermal:sawdust"
+    },
+    {
+      "chance": 0.5,
+      "item": "thermal:sawdust"
+    }
+  ]
+}

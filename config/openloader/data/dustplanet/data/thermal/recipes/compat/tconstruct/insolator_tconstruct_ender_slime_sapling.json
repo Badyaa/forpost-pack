@@ -1,0 +1,32 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "tconstruct:ender_slime_sapling"
+  },
+  "result": [
+    {
+      "item": "tconstruct:enderbark_log",
+      "chance": 6
+    },
+    {
+      "item": "tconstruct:ender_slime_sapling",
+      "chance": 1.1
+    },
+    {
+      "item": "tconstruct:enderbark_roots",
+      "chance": 1.25
+    },
+    {
+      "item": "tconstruct:ender_slime_ball",
+      "chance": 1.1
+    }
+  ],
+  "energy_mod": 3,
+  "water_mod": 3,
+  "conditions": [
+    {
+      "type": "thermal:flag",
+      "flag": "mod_tconstruct"
+    }
+  ]
+}

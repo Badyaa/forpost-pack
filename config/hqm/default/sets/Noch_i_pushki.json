@@ -1,0 +1,332 @@
+{
+  "name": "Ночь и пушки",
+  "reputationBar": [],
+  "description": {
+    "text": "Кровавая луна, тишина в цехе и артиллерия Create Big Cannons на стенах.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "7fc538cc-5d3c-5e8e-92ff-089957b4c153",
+      "name": {
+        "text": "Первая луна",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Небо краснеет, мобы прут волнами. Кровавую луну не остановить — только пережить.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:redstone",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Пережить кровавую луну",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметьте после первой кровавой луны, если колония устояла.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "e48daa24-1319-59ab-b720-bf941c018d4b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:iron_block",
+          "Count": 1
+        },
+        {
+          "id": "mekanism:ingot_steel",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ad381abd-7dec-5169-a4b1-101a0753a346",
+      "name": {
+        "text": "Тишина",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Машины Create гремят так, что не слышно рога рейда. Extreme Sound Muffler глушит их.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:note_block",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Заглушить машины",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Откройте инвентарь, нажмите кнопку «Muffler» (Extreme Sound Muffler) и отключите звуки машин Create рядом с колонией. Отметьте, когда стало тихо.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "e48daa24-1319-59ab-b720-bf941c018d4b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:note_block",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "d42129e9-a3d1-5a94-8bb4-20776a5eb1a0",
+      "name": {
+        "text": "Литейная",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Ствол пушки не куётся — его отливают. Форма, чугун, терпение.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "createbigcannons:cast_iron_cannon_barrel",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "createbigcannons:cast_iron_cannon_barrel",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "createbigcannons:cast_iron_cannon_chamber",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "createbigcannons:cast_iron_cannon_end",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Ствол",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отлейте чугунный ствол, камору и казённую часть в формах Create Big Cannons.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "7fc538cc-5d3c-5e8e-92ff-089957b4c153",
+        "079e7d2f-635e-5941-b775-5b39e3ca6338"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "createbigcannons:cannon_carriage",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "02dc24cd-04f0-579a-b7de-902c3e8bb515",
+      "name": {
+        "text": "Первый залп",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Пушка на стене, картечь в стволе. Рейдеры ещё не знают.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "createbigcannons:cannon_mount",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "createbigcannons:cannon_mount",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "createbigcannons:bag_of_grapeshot",
+                "Count": 4
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Лафет и картечь",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Поставьте лафет на стену, соберите пушку и выстрелите картечью.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "d42129e9-a3d1-5a94-8bb4-20776a5eb1a0"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "createbigcannons:solid_shot",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1ee25588-93ee-5695-84f4-47486b8e95b7",
+      "name": {
+        "text": "Батарея",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Три пушки с автоподачей от Create — уже артиллерия.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "createbigcannons:cannon_loader",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "createbigcannons:cannon_loader",
+                "Count": 3
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "createbigcannons:cannon_mount",
+                "Count": 3
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Заряжающие",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Три лафета и три механических заряжающих.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "02dc24cd-04f0-579a-b7de-902c3e8bb515"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "createbigcannons:ap_shot",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "78cf2f11-13d7-5fb8-ab05-eeb4acc1a0a7",
+      "name": {
+        "text": "Артиллерист",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Двадцать рейдеров за один рейд, огнём пушек. Колония больше не жертва.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "minecraft:tnt",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "20 рейдеров за рейд",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметьте, когда пушки положат 20 рейдеров за один рейд.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "1ee25588-93ee-5695-84f4-47486b8e95b7"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:emerald",
+          "Count": 32
+        },
+        {
+          "id": "minecraft:netherite_scrap",
+          "Count": 4
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

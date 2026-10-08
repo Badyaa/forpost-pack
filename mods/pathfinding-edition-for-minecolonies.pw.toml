@@ -1,0 +1,13 @@
+filename = "colonypathingedition-1.0.5-fix-3.jar"
+name = "Pathfinding Edition for MineColonies"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/UFGyxCZm/versions/Lc5feUin/colonypathingedition-1.0.5-fix-3.jar"
+hash-format = "sha512"
+hash = "03a156caf4a50b8e628c582c430d7f8f763c776d807ef2d85425a1c3d6b1d31cb72ae75ef68537bfdb16d4ebc34183e2fb287d9b9c00417a3b312dada6098c35"
+
+[update]
+[update.modrinth]
+mod-id = "UFGyxCZm"
+version = "Lc5feUin"

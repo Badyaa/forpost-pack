@@ -1,0 +1,50 @@
+{
+	"name": "minecraft:cities/roads",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 5,
+		"element": {
+			"element_type": "minecraft:empty_pool_element"
+		}
+	},{
+		"weight": 5,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "minecraft:cities/roads/path_i",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching"
+		}
+	},{
+		"weight": 4,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "minecraft:cities/roads/path_l",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "minecraft:cities/roads/path_t1",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching"
+		}
+	},{
+		"weight": 2,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "minecraft:cities/roads/path_t2",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching"
+		}
+	},{
+		"weight": 1,
+		"element": {
+			"element_type": "minecraft:single_pool_element",
+			"location": "minecraft:cities/roads/path_x",
+			"processors": "minecraft:empty",
+			"projection": "terrain_matching"
+		}
+	}]
+}

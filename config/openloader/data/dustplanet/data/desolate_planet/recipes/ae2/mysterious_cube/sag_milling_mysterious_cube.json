@@ -1,0 +1,51 @@
+{
+  "type": "enderio:sag_milling",
+  "bonus": "none",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:silicon"
+      }
+    }
+  ],
+  "energy": 2400,
+  "input": {
+    "item": "ae2:mysterious_cube"
+  },
+  "outputs": [
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+		"item": "ae2:calculation_processor_press"
+      },
+      "optional": false
+    },
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+		"item": "ae2:engineering_processor_press"
+      },
+      "optional": false
+    },
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+		"item": "ae2:logic_processor_press"
+      },
+      "optional": false
+    },
+    {
+      "chance": 1.0,
+      "item": {
+        "count": 1,
+		"item": "ae2:silicon_press"
+      },
+      "optional": false
+    }
+  ]
+}

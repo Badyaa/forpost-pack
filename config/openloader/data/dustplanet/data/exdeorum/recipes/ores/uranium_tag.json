@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": {
+            "item": "exdeorum:uranium_ore_chunk"
+        }
+    },
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "result": {
+        "item": "mekanism:clump_uranium",
+        "count": 2
+    },
+    "show_notification": true
+}

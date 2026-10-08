@@ -1,0 +1,13 @@
+filename = "revive_me-1.20.1-4.9.0.jar"
+name = "Revive Me! - Player Revival Mod"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/e1Ub5iPm/versions/KHNtUwh9/revive_me-1.20.1-4.9.0.jar"
+hash-format = "sha512"
+hash = "d16d3c931be379b25d9cb04ca4f5e5712a1a6a4946981065931d0ec7ae1f969113f4237404c22bf123081ffe418889f39a6dd56040815223104b95021ce7242e"
+
+[update]
+[update.modrinth]
+mod-id = "e1Ub5iPm"
+version = "KHNtUwh9"

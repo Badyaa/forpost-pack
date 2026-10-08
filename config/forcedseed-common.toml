@@ -1,0 +1,5 @@
+
+[forcedseed]
+	#The seed that should always be applied.
+	seedString = ""
+

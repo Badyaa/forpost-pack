@@ -1,0 +1,3 @@
+// Compost colors for mekanismmoremachine. You may add your own colors, change existing ones, or remove colors that aren't needed.
+crystal_energy, #ff80ff
+shard_energy, #ff9aff

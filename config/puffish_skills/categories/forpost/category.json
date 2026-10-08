@@ -1,0 +1,14 @@
+{
+ "unlocked_by_default": true,
+ "exclusive_root": false,
+ "title": "Форпост: навыки",
+ "description": "Три пути: мэр, кузнец, инженер. Очки — за уровни опыта.",
+ "icon": {
+  "type": "item",
+  "data": {
+   "item": "minecraft:book"
+  }
+ },
+ "background": "textures/gui/advancements/backgrounds/stone.png",
+ "starting_points": 1
+}

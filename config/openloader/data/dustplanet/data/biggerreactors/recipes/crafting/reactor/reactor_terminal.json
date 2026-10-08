@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CEC",
+    "YDY",
+    "CRC"
+  ],
+  "key": {
+    "C": {
+      "item": "biggerreactors:reactor_casing"
+    },
+    "Y": {
+      "tag": "forge:ingots/uranium"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "kubejs:crashed_reactor_controller"
+    }
+  },
+  "result": {
+    "item": "biggerreactors:reactor_terminal"
+  }
+}

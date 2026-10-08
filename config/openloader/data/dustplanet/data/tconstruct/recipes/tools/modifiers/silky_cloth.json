@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "exdeorum:string_mesh"
+  },
+  "cast_consumed": true,
+  "cooling_time": 52,
+  "fluid": {
+    "amount": 360,
+    "fluid": "tconstruct:molten_rose_gold"
+  },
+  "result": "tconstruct:silky_cloth"
+}

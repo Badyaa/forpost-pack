@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  D",
+    "CCI",
+    "GGR"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:daylight_detector"
+    },
+    "G": {
+      "tag": "desolate_planet:sync_block_ingredients"
+    },
+    "C": {
+      "tag": "minecraft:wool_carpets"
+    },
+    "I": {
+      "item": "minecraft:iron_bars"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "sync:treadmill"
+  }
+}

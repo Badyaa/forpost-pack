@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "varkin_system:talos_desert",
+          "parameters": {
+            "temperature": 2,
+            "humidity": 0,
+            "continentalness": 2,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "varkin_system:talos_corrupted_desert",
+          "parameters": {
+            "temperature": 2,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 2,
+            "weirdness": 2,
+            "depth": 0,
+            "offset": 0.5
+          }
+        },
+        {
+          "biome": "varkin_system:talos_dire_dunes",
+          "parameters": {
+            "temperature": 2,
+            "humidity": 0,
+            "continentalness": 1.5,
+            "erosion": -1,
+            "weirdness": 1,
+            "depth": 0,
+            "offset": 0.9
+          }
+        },
+        {
+          "biome": "varkin_system:talos_searing_sands",
+          "parameters": {
+            "temperature": 2,
+            "humidity": -1,
+            "continentalness": 2,
+            "erosion": 0.5,
+            "weirdness": -1,
+            "depth": 0,
+            "offset": 0.9
+          }
+        },
+        {
+          "biome": "varkin_system:talos_irradiated_fields",
+          "parameters": {
+            "temperature": 2,
+            "humidity": 1,
+            "continentalness": 0.5,
+            "erosion": 1,
+            "weirdness": -0.5,
+            "depth": 0,
+            "offset": 0.9
+          }
+        }
+      ]
+    }
+  }
+}

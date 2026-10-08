@@ -1,0 +1,486 @@
+{
+  "name": "Нефтяная вышка",
+  "reputationBar": [],
+  "description": {
+    "text": "Брошенная нефтяная вышка к востоку от базы: дорога, зачистка, детали для перегонки нефти и барокамеры, а в конце — второй форпост команды.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "532d0572-962e-5ba4-9d5b-78953c24102a",
+      "name": {
+        "text": "Полевой гайд",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "MAT нашёл в архивах «Рассвета» схему брошенной нефтяной вышки к востоку от базы. Там детали для перегонки нефти и барокамеры, оружейка и припасы прежних колонистов.\n\nПрочитай книгу «Нефтяная вышка — полевой гайд».",
+        "isTranslationKey": false
+      },
+      "x": 20,
+      "y": 40,
+      "icon": {
+        "id": "minecraft:written_book",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Прочитать гайд",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметь, когда прочитаешь книгу-гайд. Нет книги — попроси у владельца сервера.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:torch",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "39539520-1971-58d0-8bbd-16344f3e8359",
+      "name": {
+        "text": "Дорога к вышке",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Вышка стоит примерно в 200 блоках на восток и 100 на юг от базы. Центр: X −2008, Z 2124. Возьми воду и еду.",
+        "isTranslationKey": false
+      },
+      "x": 62,
+      "y": 40,
+      "icon": {
+        "id": "minecraft:compass",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:location",
+          "description": {
+            "text": "Дойти до вышки",
+            "isTranslationKey": false
+          },
+          "locations": [
+            {
+              "name": {
+                "text": "Нефтяная вышка",
+                "isTranslationKey": false
+              },
+              "x": -2008,
+              "y": 64,
+              "z": 2124,
+              "dim": "minecraft:overworld",
+              "radius": 60,
+              "visible": "NONE",
+              "icon": {
+                "id": "minecraft:compass",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Квест засчитается сам, когда окажешься в 60 блоках от центра вышки.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "532d0572-962e-5ba4-9d5b-78953c24102a"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:bread",
+          "Count": 6
+        },
+        {
+          "id": "kubejs:bandage",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ea9524a0-302c-5ba2-aa2f-cc09e0ee64e8",
+      "name": {
+        "text": "Зачистка охраны",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Вышку держат песчаные зомби, зомби-пиглины и два ифрита по краям. Спаунеры можно ломать киркой — тогда мобы там больше не появятся.",
+        "isTranslationKey": false
+      },
+      "x": 104,
+      "y": 20,
+      "icon": {
+        "id": "minecraft:iron_sword",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:kill",
+          "description": {
+            "text": "Охрана",
+            "isTranslationKey": false
+          },
+          "mobs": [
+            {
+              "name": {
+                "text": "Песчаный зомби",
+                "isTranslationKey": false
+              },
+              "mob": "specialmobs:huskzombie",
+              "kills": 10,
+              "icon": {
+                "id": "minecraft:rotten_flesh",
+                "Count": 1
+              }
+            },
+            {
+              "name": {
+                "text": "Ифрит",
+                "isTranslationKey": false
+              },
+              "mob": "minecraft:blaze",
+              "kills": 2,
+              "icon": {
+                "id": "minecraft:blaze_rod",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Убей 10 песчаных зомби и 2 ифритов на вышке. Ифриты стреляют огнём — держись за укрытиями.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "39539520-1971-58d0-8bbd-16344f3e8359"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:iron_ingot",
+          "Count": 8
+        },
+        {
+          "id": "kubejs:bandage",
+          "Count": 4
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1d16e06e-be06-59a1-9b4b-201833995b2b",
+      "name": {
+        "text": "Оружейка",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "На юге вышки (X −2015, Z 2161–2165) стоят 8 обычных и 4 продвинутых оружейных шкафа. Продвинутые — ниже, на высоте 62.",
+        "isTranslationKey": false
+      },
+      "x": 104,
+      "y": 60,
+      "icon": {
+        "id": "minecraft:crossbow",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Открыть шкафы",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметь, когда обыщешь оружейку.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "39539520-1971-58d0-8bbd-16344f3e8359"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:gunpowder",
+          "Count": 8
+        },
+        {
+          "id": "minecraft:arrow",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "7a310c07-5492-5ebd-ae54-a8acaae8f1ef",
+      "name": {
+        "text": "Детали перегонной установки",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "На восточном краю вышки, наверху (X −1955, Z 2118, высота 67–71), стоят повреждённые перегонные установки и их выходы. Сломай их железной киркой или лучше и забери.",
+        "isTranslationKey": false
+      },
+      "x": 146,
+      "y": 20,
+      "icon": {
+        "id": "minecraft:cauldron",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "kubejs:crashed_refinery",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "kubejs:crashed_refinery_output",
+                "Count": 4
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Детали установки",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Имей при себе 1 повреждённую перегонную установку и 4 повреждённых выхода. Квест проверяет инвентарь, детали не забираются.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ea9524a0-302c-5ba2-aa2f-cc09e0ee64e8"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:redstone",
+          "Count": 16
+        },
+        {
+          "id": "minecraft:iron_ingot",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "1c02419e-7bfa-5eb2-bf90-2ea929301dcf",
+      "name": {
+        "text": "Стенки барокамеры",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "В центре вышки (X −2028, Z 2127, высота 64–68) — повреждённые стенки барокамеры. Для барокамеры 3×3×3 нужно 25 стенок и клапан. Как чинить — наведи на стенку в JEI и нажми U.",
+        "isTranslationKey": false
+      },
+      "x": 146,
+      "y": 60,
+      "icon": {
+        "id": "minecraft:iron_block",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "kubejs:crashed_pressure_chamber_wall",
+                "Count": 25
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "25 стенок",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Имей при себе 25 повреждённых стенок барокамеры. Квест проверяет инвентарь, стенки не забираются.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ea9524a0-302c-5ba2-aa2f-cc09e0ee64e8"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "pneumaticcraft:ingot_iron_compressed",
+          "Count": 6
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "47f100be-33d2-5223-84ae-11465b8f53ad",
+      "name": {
+        "text": "Восстановить перегонку",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Собери рабочую перегонную установку PneumaticCraft: контроллер и 4 выхода стопкой над ним, рядом нагреватель. Рецепты — в JEI. Ставить её можно прямо на вышке или на базе.",
+        "isTranslationKey": false
+      },
+      "x": 188,
+      "y": 40,
+      "icon": {
+        "id": "minecraft:blast_furnace",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "pneumaticcraft:refinery",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "pneumaticcraft:refinery_output",
+                "Count": 4
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Установка в сборе",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Имей при себе контроллер перегонной установки и 4 выхода — или отметь, построив её. Подробности — квест «Утончённый вкус» в главе «Под давлением».",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "7a310c07-5492-5ebd-ae54-a8acaae8f1ef",
+        "1c02419e-7bfa-5eb2-bf90-2ea929301dcf"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:diamond",
+          "Count": 2
+        },
+        {
+          "id": "minecraft:experience_bottle",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ee193055-b569-59c1-8b5f-4e741e179812",
+      "name": {
+        "text": "Ветка до вышки",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Точка возрождения остаётся на базе, а до вышки проложи дорогу: поезд Create (рельсы, две станции и расписание) или простые рельсы с вагонеткой. Сломай спаунеры на вышке и поставь там сундуки — получится рабочий форпост, куда удобно ездить с базы. Под вышкой, как и везде, есть нефть для газлифта.\n\nКак строить поезд — глава квестов «Железная дорога».",
+        "isTranslationKey": false
+      },
+      "x": 230,
+      "y": 40,
+      "icon": {
+        "id": "create:track_station",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "create:track_station",
+                "Count": 2
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Две станции",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Имей при себе 2 станции Create (по одной на базу и на вышку). Если едешь на вагонетке — отметь пункт ниже.",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Дорога готова",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметь, когда от базы до вышки можно доехать поездом или вагонеткой, а на вышке не осталось спаунеров.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "47f100be-33d2-5223-84ae-11465b8f53ad"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:diamond",
+          "Count": 3
+        },
+        {
+          "id": "minecraft:golden_apple",
+          "Count": 2
+        },
+        {
+          "id": "minecraft:experience_bottle",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

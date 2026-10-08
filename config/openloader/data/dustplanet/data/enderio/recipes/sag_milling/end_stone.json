@@ -1,0 +1,23 @@
+{
+  "type": "enderio:sag_milling",
+  "energy": 2400,
+  "input": {
+    "tag": "forge:end_stones"
+  },
+  "outputs": [
+    {
+      "chance": 0.7,
+      "item": {
+        "item": "exdeorum:crushed_end_stone"
+      },
+      "optional": false
+    },
+    {
+      "chance": 0.3,
+      "item": {
+        "item": "exdeorum:crushed_end_stone"
+      },
+      "optional": false
+    }
+  ]
+}

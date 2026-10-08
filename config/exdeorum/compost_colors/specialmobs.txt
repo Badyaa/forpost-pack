@@ -1,0 +1,4 @@
+// Compost colors for specialmobs. You may add your own colors, change existing ones, or remove colors that aren't needed.
+incorporeal_fire_charge, #527850
+slab_fire_charge, #725134
+syringe, #cad758

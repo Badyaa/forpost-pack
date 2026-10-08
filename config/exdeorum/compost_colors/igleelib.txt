@@ -1,0 +1,7 @@
+// Compost colors for igleelib. You may add your own colors, change existing ones, or remove colors that aren't needed.
+blaze_shard, #ffa284
+blazum_ingot, #e86f15
+derium_ingot, #6c0c8c
+iglium_upgrade_smithing_template, #ffffff
+lavium_ingot, #e82322
+modium_ingot, #1537e8

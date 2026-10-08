@@ -1,0 +1,166 @@
+{
+	"name": "minecraft:cities/buildings",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_3",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_4",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_5",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_6",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_7",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_8",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_9",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_10",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_11",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_12",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_13",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_14",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_15",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_16",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_17",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_18",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_19",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},{
+		"weight": 3,
+		"element": {
+			"location": "minecraft:cities/buildings/building_20",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}
+]
+}

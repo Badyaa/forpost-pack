@@ -1,0 +1,14 @@
+{
+  "planet.minecraft.overworld": "Талос (неизвестная планета)",
+  "dimension.minecraft.overworld": "Талос",
+  "planet.varkin_system.earth": "Земля",
+  "dimension.varkin_system.earth": "Земля",
+  "planet.varkin_system.talos_orbit": "Орбита Талоса",
+  "dimension.varkin_system.talos_orbit": "Орбита Талоса",
+  "biome.varkin_system.talos_desert": "Пустыня Талоса",
+  "biome.varkin_system.talos_corrupted_desert": "Заражённая пустыня Талоса",
+  "item.kubejs.bandage": "Бинт",
+  "biome.varkin_system.talos_dire_dunes": "Мрачные дюны Талоса",
+  "biome.varkin_system.talos_searing_sands": "Палящие пески Талоса",
+  "biome.varkin_system.talos_irradiated_fields": "Заражённые поля Талоса"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "item": "exdeorum:crushed_netherrack"
+  },
+  "result": [
+    {
+      "item": "create:cinder_flour",
+      "chance": 1.5
+    }
+  ],
+  "experience": 0.5
+}

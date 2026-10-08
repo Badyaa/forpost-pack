@@ -1,0 +1,25 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "item": "ae2:mysterious_cube"
+  },
+  "result": [
+    {
+      "item": "ae2:calculation_processor_press",
+      "count": 1
+    },
+    {
+      "item": "ae2:engineering_processor_press",
+      "count": 1
+    },
+    {
+      "item": "ae2:logic_processor_press",
+      "count": 1
+    },
+    {
+      "item": "ae2:silicon_press",
+      "count": 1
+    }
+  ],
+  "energy": 1000
+}

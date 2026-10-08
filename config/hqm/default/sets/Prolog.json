@@ -1,0 +1,272 @@
+{
+  "name": "Пролог: «Рассвет-7»",
+  "reputationBar": [],
+  "description": {
+    "text": "История экспедиции: кто ты, откуда летел и почему оказался на Талосе. Начни отсюда.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "20d5b85b-2c76-54a7-bfa1-cb7da300a3f2",
+      "name": {
+        "text": "Сигнал бедствия",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "2291 год. Земля пуста уже двести лет. После Пыльного Века люди ушли на орбитальные станции и в колонии дальних систем, а родная планета заросла и затихла.\n\nСовет Колоний запустил программу «Возвращение»: каждому добровольцу — надел земли на Земле, семена, чертежи первого поселения и право основать свою колонию. Ты подписал контракт одним из первых.",
+        "isTranslationKey": false
+      },
+      "x": 20,
+      "y": 40,
+      "icon": {
+        "id": "minecraft:bell",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Прочитать",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметь галочку, когда прочитаешь. Эта глава — история, награды за неё небольшие.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:bread",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ef55aba9-ef3b-50a8-b82f-6128110fc1f7",
+      "name": {
+        "text": "«Рассвет-7»",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Транспорт «Рассвет-7»: двести капсул сна, груз на целый город, маршрут через прыжковые ворота системы Варкин.\n\nНа выходе из прыжка что-то пошло не так. Навигатор увёл корабль в чужую систему, реактор ушёл в аварийный сброс, и «Рассвет» рухнул на неизвестную пустынную планету — T4L0S.",
+        "isTranslationKey": false
+      },
+      "x": 62,
+      "y": 85,
+      "icon": {
+        "id": "minecraft:white_bed",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Прочитать",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметь галочку, когда прочитаешь.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "20d5b85b-2c76-54a7-bfa1-cb7da300a3f2"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:torch",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "da01d11a-b049-5752-9ee6-325e949f775e",
+      "name": {
+        "text": "Пробуждение",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Ты проснулся в капсуле от аварийной сирены. Корабельный терминал MAT жив, но говорит обрывками: экипажа нет, связи нет, половины груза нет. Снаружи — пыль, жара и радиация.\n\nMAT: «Статус миссии: переселенец жив. Надел на Земле: зарезервирован. Расстояние: неизвестно. Рекомендация: не умирать».",
+        "isTranslationKey": false
+      },
+      "x": 104,
+      "y": 40,
+      "icon": {
+        "id": "minecraft:redstone_torch",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Прочитать",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметь галочку, когда прочитаешь.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ef55aba9-ef3b-50a8-b82f-6128110fc1f7"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:potion",
+          "Count": 2,
+          "tag": "{Potion:\"minecraft:water\",Purity:3}"
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "f3c6012c-9146-5e21-8a74-dfb3418d4d24",
+      "name": {
+        "text": "Один или вместе",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Выжили не только вы. Одни переселенцы держатся вместе у обломков, другие приземлились далеко друг от друга.\n\nТочку посадки выбирают в «Куполе» — обзорном модуле, который завис на парашютах над Талосом. Табличка ОДИН — своя капсула далеко от всех; панель С ДРУГОМ — имена игроков, у которых уже есть база: нажми на имя и приземлишься к нему.\n\nКоманды: /base (или /база) — вернуться на свою базу, /lobby — снова в «Купол» (сменить базу), /intro — повторить посадку. Если играете вдвоём — создайте группу во вкладке «Группа» этой книги: квесты будут общие, а награду получит каждый.",
+        "isTranslationKey": false
+      },
+      "x": 146,
+      "y": 85,
+      "icon": {
+        "id": "minecraft:compass",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Выбрать базу в «Куполе»",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Выбери базу через /base menu (или кнопку в чате при первом входе) и отметь галочку.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "da01d11a-b049-5752-9ee6-325e949f775e"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "kubejs:nutrient_brick",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e40da448-61e9-5604-9e24-9e1aad52bfa7",
+      "name": {
+        "text": "Ты здесь не первый",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Пустыню Талоса усеивают руины старой добывающей экспедиции: заброшенные лаборатории, реакторы, целые города. Кто-то уже пытался здесь жить — и ушёл. Или не ушёл.\n\nMAT: «Рекомендация: руины — источник металла, механизмов и ответов. Входить осторожно».",
+        "isTranslationKey": false
+      },
+      "x": 188,
+      "y": 40,
+      "icon": {
+        "id": "minecraft:cracked_stone_bricks",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Найти руины",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Найди любую заброшенную постройку экспедиции и отметь галочку. Сундуки в руинах — главный источник редких деталей.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "f3c6012c-9146-5e21-8a74-dfb3418d4d24"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:torch",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "28bb8016-51bf-53a2-b2ea-9782a0dd9c7f",
+      "name": {
+        "text": "Надел ждёт",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Цель не изменилась: выжить, поднять корабельные системы, собрать технологии из обломков и руин, построить ракету, долететь до Земли и основать там свою колонию — ради неё ты и летел.\n\nДальше ведут главы «Основы выживания» (первые дни на Талосе) и «Курс на Землю» (полёт домой). Колония — в главах «Первое поселение» и «Рост колонии».",
+        "isTranslationKey": false
+      },
+      "x": 230,
+      "y": 85,
+      "icon": {
+        "id": "ad_astra:tier_1_rocket",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Принято",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Отметь галочку — и открывай «Основы выживания».",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "e40da448-61e9-5604-9e24-9e1aad52bfa7"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:potion",
+          "Count": 2,
+          "tag": "{Potion:\"minecraft:water\",Purity:3}"
+        },
+        {
+          "id": "kubejs:nutrient_brick",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

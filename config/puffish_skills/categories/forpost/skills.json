@@ -1,0 +1,125 @@
+{
+ "mayor_1": {
+  "x": -140,
+  "y": -140,
+  "definition": "mayor_1",
+  "root": true
+ },
+ "mayor_2": {
+  "x": -140,
+  "y": -100,
+  "definition": "mayor_2"
+ },
+ "mayor_3": {
+  "x": -140,
+  "y": -60,
+  "definition": "mayor_3"
+ },
+ "mayor_4": {
+  "x": -140,
+  "y": -20,
+  "definition": "mayor_4"
+ },
+ "mayor_5": {
+  "x": -140,
+  "y": 20,
+  "definition": "mayor_5"
+ },
+ "mayor_6": {
+  "x": -140,
+  "y": 60,
+  "definition": "mayor_6"
+ },
+ "mayor_7": {
+  "x": -140,
+  "y": 100,
+  "definition": "mayor_7"
+ },
+ "mayor_8": {
+  "x": -140,
+  "y": 140,
+  "definition": "mayor_8"
+ },
+ "smith_1": {
+  "x": 0,
+  "y": -140,
+  "definition": "smith_1",
+  "root": true
+ },
+ "smith_2": {
+  "x": 0,
+  "y": -100,
+  "definition": "smith_2"
+ },
+ "smith_3": {
+  "x": 0,
+  "y": -60,
+  "definition": "smith_3"
+ },
+ "smith_4": {
+  "x": 0,
+  "y": -20,
+  "definition": "smith_4"
+ },
+ "smith_5": {
+  "x": 0,
+  "y": 20,
+  "definition": "smith_5"
+ },
+ "smith_6": {
+  "x": 0,
+  "y": 60,
+  "definition": "smith_6"
+ },
+ "smith_7": {
+  "x": 0,
+  "y": 100,
+  "definition": "smith_7"
+ },
+ "smith_8": {
+  "x": 0,
+  "y": 140,
+  "definition": "smith_8"
+ },
+ "eng_1": {
+  "x": 140,
+  "y": -140,
+  "definition": "eng_1",
+  "root": true
+ },
+ "eng_2": {
+  "x": 140,
+  "y": -100,
+  "definition": "eng_2"
+ },
+ "eng_3": {
+  "x": 140,
+  "y": -60,
+  "definition": "eng_3"
+ },
+ "eng_4": {
+  "x": 140,
+  "y": -20,
+  "definition": "eng_4"
+ },
+ "eng_5": {
+  "x": 140,
+  "y": 20,
+  "definition": "eng_5"
+ },
+ "eng_6": {
+  "x": 140,
+  "y": 60,
+  "definition": "eng_6"
+ },
+ "eng_7": {
+  "x": 140,
+  "y": 100,
+  "definition": "eng_7"
+ },
+ "eng_8": {
+  "x": 140,
+  "y": 140,
+  "definition": "eng_8"
+ }
+}

@@ -1,0 +1,45 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "industrialforegoing:mycelial_ender"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "minecraft:ender_pearl"
+          },
+          "C": {
+            "item": "minecraft:ender_eye"
+          },
+          "M": {
+            "item": "thermal:machine_frame"
+          },
+          "R": {
+            "item": "minecraft:redstone"
+          }
+        },
+        "pattern": [
+          "BBB",
+          "BCB",
+          "RMR"
+        ],
+        "result": {
+          "item": "industrialforegoing:mycelial_ender"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

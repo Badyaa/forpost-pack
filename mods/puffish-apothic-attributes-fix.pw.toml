@@ -1,0 +1,13 @@
+filename = "puffish-apothic-attributes-fix-1.1.0.jar"
+name = "puffish apothic attributes fix"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3a1eb2bb0e502fbf31733daa3ee561acdcfc16c4"
+mode = 'metadata:curseforge'
+
+[update]
+[update.curseforge]
+file-id = 8436231
+project-id = 1609910

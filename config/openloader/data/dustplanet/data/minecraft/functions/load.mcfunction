@@ -1,0 +1,1 @@
+execute run place template minecraft:ship/ship ~ ~ ~

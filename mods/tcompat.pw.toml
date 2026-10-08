@@ -1,0 +1,13 @@
+filename = "TCompat.1.20.1-1.2.2.jar"
+name = "TCompat"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/9LHoXhZq/versions/upCHwPJn/TCompat.1.20.1-1.2.2.jar"
+hash-format = "sha512"
+hash = "f417dd7a83ae3db8af5d4fbe5ae4a57cb3e5a585c1f54a019844839ec63790a48ae3336248672ec6352c09f24cd05794c0466aade7d2d2a9a726cac4f7ff9866"
+
+[update]
+[update.modrinth]
+mod-id = "9LHoXhZq"
+version = "upCHwPJn"

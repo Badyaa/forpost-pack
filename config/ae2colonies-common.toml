@@ -1,0 +1,48 @@
+
+#Crafting Settings
+[crafting]
+	#Ticks before a pending crafting calculation times out (default: 200 = 10 seconds)
+	#Range: 20 ~ 6000
+	craftingTimeoutTicks = 200
+	#Milliseconds before a failed crafting item can be retried (default: 30000 = 30 seconds)
+	#Range: 1000 ~ 300000
+	craftingFailureCooldownMs = 30000
+	#Maximum concurrent AE2 crafting jobs per terminal (default: 8)
+	#Range: 1 ~ 64
+	maxConcurrentCraftingJobs = 8
+	#Maximum recursion depth when checking if items can be crafted (default: 6)
+	#Range: 1 ~ 20
+	maxCraftDepth = 6
+
+#Performance Settings
+[performance]
+	#Ticks to cache the ME network item list (default: 20 = 1 second)
+	#Range: 1 ~ 200
+	itemCacheDurationTicks = 20
+	#Ticks between warehouse link re-checks for linked terminals (default: 200 = 10 seconds)
+	#Range: 40 ~ 2000
+	terminalRecheckIntervalTicks = 200
+
+#Feature Toggles
+[features]
+	#Allow redstone signal to disable Colony Terminal (default: true)
+	enableRedstoneControl = true
+	#Allow on-the-fly Domum Ornamentum block synthesis (default: true)
+	enableDOBlockSynthesis = true
+	#Allow AE2 to delegate missing crafting ingredients to colony workers (default: true)
+	enableSubRequestDelegation = true
+	#Ticks before an unfulfilled colony sub-request times out (default: 6000 = 5 minutes)
+	#Range: 600 ~ 72000
+	subRequestTimeoutTicks = 6000
+	#Maximum concurrent delegated jobs per terminal (default: 4)
+	#Range: 1 ~ 16
+	maxConcurrentDelegatedJobs = 4
+
+#Notification Settings
+[notifications]
+	#Send in-game chat notifications to colony players when crafting fails or lacks ingredients (default: true)
+	enablePlayerNotifications = true
+	#Minimum seconds between notifications for the same item to prevent chat spam (default: 60)
+	#Range: 5 ~ 600
+	notificationCooldownSeconds = 60
+

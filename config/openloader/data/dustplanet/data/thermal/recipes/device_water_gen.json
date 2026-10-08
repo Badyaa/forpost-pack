@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "ae2:cell_component_256k"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "C": {
+      "tag": "forge:ingots/copper"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "R": {
+      "item": "thermal:redstone_servo"
+    }
+  },
+  "pattern": [
+    "CIC",
+    "ABA",
+    "CRC"
+  ],
+  "result": {
+    "item": "thermal:device_water_gen"
+  },
+  "show_notification": true
+}

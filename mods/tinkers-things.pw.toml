@@ -1,0 +1,13 @@
+filename = "Tinker-Things-1.20.1-1.3.3.jar"
+name = "Tinkers' Things"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/fNJfw6Ix/versions/XdV0Jtbr/Tinker-Things-1.20.1-1.3.3.jar"
+hash-format = "sha512"
+hash = "eb94509409021229a7b3f030dc1faa536dd7f4257ed5da7e4cf39d7232bee738e7dafda41c0555aebe235db3b543e34b6d3cd295e6393ebeda0878f9a012a11c"
+
+[update]
+[update.modrinth]
+mod-id = "fNJfw6Ix"
+version = "XdV0Jtbr"

@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+      "I": {
+        "item": "pneumaticcraft:reinforced_bricks"
+      },
+      "C": {
+        "item": "kubejs:crashed_chamber_wall"
+      }
+    },
+    "pattern": [
+      " I ",
+      "ICI",
+      " I "
+    ],
+    "result": {
+      "count": 16,
+      "item": "pneumaticcraft:pressure_chamber_wall"
+    }
+  }

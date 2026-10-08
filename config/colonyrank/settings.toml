@@ -1,0 +1,15 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+scoringMode = "new"
+newPreset = "development"
+customPopCoef = 5.0
+customHappinessCoef = 0.4
+customBuildingCoef = 5.0
+customLevelCoef = 2.5
+customClaimsCoef = 0.5
+populationMultiplier = 5
+buildingMultiplier = 10
+averageBuildingLevelMultiplier = 100
+claimedChunksMultiplier = 10
+overallHappinessMultiplier = 5
+language = "en"

@@ -1,0 +1,13 @@
+filename = "tinkers_advanced_core-3.0.0-beta.5.jar"
+name = "Tinkers' Advanced-Core"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/74PR1ZtO/versions/6DfcmffU/tinkers_advanced_core-3.0.0-beta.5.jar"
+hash-format = "sha512"
+hash = "c2c1db65761ef4e84741485acf2142ca5ab9e137e970689054fd7c917bf584222c8052598e069ce4351406d1fa06c36d409a6e696597613d7cee2718a9ad0072"
+
+[update]
+[update.modrinth]
+mod-id = "74PR1ZtO"
+version = "6DfcmffU"

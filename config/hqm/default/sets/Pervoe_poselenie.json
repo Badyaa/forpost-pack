@@ -1,0 +1,920 @@
+{
+  "name": "Первое поселение",
+  "reputationBar": [],
+  "description": {
+    "text": "Учебник MineColonies: как ставить здания, нанимать жителей и кормить колонию.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "7329de0e-ba90-5346-9b1c-602104243e87",
+      "name": {
+        "text": "Строительный инструмент",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Здания колонии не строятся по блокам: их ставят чертежом через строительный инструмент, а возводит строитель. Инструмент лежит в сундуке лагеря снабжения.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "structurize:sceptergold",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "structurize:sceptergold",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Строительный инструмент",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Кликните ПКМ инструментом по земле: откроется меню чертежей. Слева выберите набор стиля (для начала подойдёт «Medieval Oak» или любой другой), справа — здание и уровень. Клавиши: R — повернуть, M — отразить, стрелки — сдвинуть. Зелёный контур — можно ставить, красный — мешают блоки или граница колонии. Подтвердите — на месте появится ограждающая лента и «заявка на стройку».",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "614911e6-33d1-5106-8db1-f5c0ff5da346"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:oak_planks",
+          "Count": 64
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "b2915e78-c6af-5cc9-a073-b033ad1b21fe",
+      "name": {
+        "text": "Первый строитель",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Строитель — единственный, кто умеет возводить здания. Ему нужна собственная хижина, а хижину сначала ставит он же: первое здание собирается почти пустым, чтобы было куда заселиться.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhutbuilder",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutbuilder",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Хижина строителя",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите блок «Хижина строителя» (доски + любые доски вокруг, см. JEI). Поставьте её строительным инструментом (уровень 1). Затем кликните по блоку хижины → вкладка «Работник» → «Нанять»: выберите любого жителя. Строитель начнёт стройку сам.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "7329de0e-ba90-5346-9b1c-602104243e87"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:brick",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "6754910c-dff1-581b-ac2c-a65416e2ab6b",
+      "name": {
+        "text": "Заявки и планшет",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Строитель не носит материалы из воздуха — он их запрашивает. Пока нет склада, носить придётся вам. Планшет показывает все заявки колонии.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:clipboard",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:clipboard",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Планшет",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите планшет (доски + бумага) и кликните ПКМ: список того, что просят жители. Отдать материалы можно тремя способами: положить в сундук хижины строителя, кликнуть по строителю с предметом в руке, или позже — через склад. В окне хижины во вкладке «Заявки» видно, что именно не хватает для текущего здания.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "b2915e78-c6af-5cc9-a073-b033ad1b21fe"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:cobblestone",
+          "Count": 64
+        },
+        {
+          "id": "minecraft:oak_planks",
+          "Count": 64
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "58300ce5-0c04-5b1e-a671-eea258e0fbd4",
+      "name": {
+        "text": "Ратуша под крышей",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Блок ратуши стоит, но само здание ещё не построено — строитель должен его возвести. Закажите ратушу уровня 1.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:bell",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Ратуша уровня 1 построена",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Кликните по блоку ратуши → «Построить» (или строительным инструментом наведите на ратушу и выберите уровень 1). Строитель заберёт заявку, запросит материалы и построит. Когда стройка закончится, в чате придёт сообщение. Отметьте галочку.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "6754910c-dff1-581b-ac2c-a65416e2ab6b"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:emerald",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c6947620-4c2a-5c58-80b3-476fbdef121e",
+      "name": {
+        "text": "Крыша над головой",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Новые жители приходят только в свободные дома. Два дома — минимум, чтобы колония начала расти.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhutcitizen",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutcitizen",
+                "Count": 2
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Дома жителей",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите два блока «Дом жителя», поставьте строительным инструментом и закажите стройку. В доме уровня 1 живёт один житель, на уровне 2 — двое и так далее.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "58300ce5-0c04-5b1e-a671-eea258e0fbd4"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:red_bed",
+          "Count": 4
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "3b9b8d57-a981-5b90-aeaf-0600e5477090",
+      "name": {
+        "text": "Таверна",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Жители не появляются из ниоткуда: в таверну заходят путники, и их можно уговорить остаться — за еду или предметы.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "minecolonies:blockhuttavern",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhuttavern",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Таверна",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте таверну уровня 1. В ней до 4 гостей; кликните по таверне → вкладка «Гости» → «Нанять» и заплатите то, что просит гость. Таверна ещё и кормит: жители едят там, если у повара есть еда.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "c6947620-4c2a-5c58-80b3-476fbdef121e"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:cooked_beef",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ba2c7bd6-1db6-5699-89a7-35b760423a02",
+      "name": {
+        "text": "Склад и курьер",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Носить каждую заявку вручную — не жизнь. Склад хранит всё, курьер разносит по хижинам.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 80,
+      "icon": {
+        "id": "minecolonies:blockhutwarehouse",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutwarehouse",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Склад",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте склад уровня 1 — это большое здание, материалов уйдёт много.",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutdeliveryman",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Хижина курьера",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте хижину курьера рядом со складом и наймите курьера. Теперь всё, что лежит на складе, автоматически попадает к тому, кто просит. Складывайте материалы в сундуки склада — и заявки закроются сами.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "c6947620-4c2a-5c58-80b3-476fbdef121e"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecolonies:resourcescroll",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:chest",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "5247643b-7ac2-5561-973d-92dd4837bec3",
+      "name": {
+        "text": "Ферма",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Талосская пыль осталась позади: здесь растёт настоящая пшеница. Фермер сам сеет и собирает урожай.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 80,
+      "icon": {
+        "id": "minecolonies:blockhutfarmer",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutfarmer",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Хижина фермера",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте хижину фермера и наймите фермера.",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutfield",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Поле",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите блок «Поле», поставьте на ровной земле рядом с фермой, кликните по нему и выберите культуру (пшеница). Фермер сам вспашет землю вокруг.",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:wheat",
+                "Count": 16
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Урожай",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Сдайте 16 пшеницы — с поля или со своей грядки.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ba2c7bd6-1db6-5699-89a7-35b760423a02"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:wheat_seeds",
+          "Count": 32
+        },
+        {
+          "id": "minecraft:bone_meal",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "9d3bc084-8a6a-508e-8a33-1d4f14ed5a43",
+      "name": {
+        "text": "Повар",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Голодный житель работает медленно и болеет. Повар готовит из того, что приносят фермер и охотники, и кормит всех.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 80,
+      "icon": {
+        "id": "minecolonies:blockhutcook",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutcook",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Ресторан",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте здание повара («Ресторан») и наймите повара. Он берёт сырую еду со склада, готовит и раздаёт жителям, которые приходят поесть.",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "farmersdelight:cooking_pot",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "farmersdelight:stove",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Кухня Farmer's Delight",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Своя кухня тоже пригодится: котелок на плите даёт сытные блюда, которые повар раздаёт охотнее хлеба.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "5247643b-7ac2-5561-973d-92dd4837bec3"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "farmersdelight:flint_knife",
+          "Count": 1
+        },
+        {
+          "id": "minecraft:bowl",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fe33ae55-29af-5f04-8caf-744df310e50f",
+      "name": {
+        "text": "Лесник",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Дерево — главный материал стройки. Лесник валит и сажает деревья сам, а с топором получше — быстрее.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 80,
+      "icon": {
+        "id": "minecolonies:blockhutlumberjack",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutlumberjack",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Хижина лесника",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Поставьте хижину лесника недалеко от леса и наймите работника. Инструменты жители тоже запрашивают — положите на склад несколько топоров и кирок.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ba2c7bd6-1db6-5699-89a7-35b760423a02"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:oak_sapling",
+          "Count": 8
+        },
+        {
+          "id": "minecraft:iron_axe",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "229fd30f-1021-58ae-a01d-0d8eb826ec7d",
+      "name": {
+        "text": "Лесопилка и каменотёс",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Строитель просит доски, ступени, забор, кирпич. Ремесленники колонии делают это сами по заявкам.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 135,
+      "icon": {
+        "id": "minecolonies:blockhutsawmill",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutsawmill",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Лесопилка",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте лесопилку. Кликните по ней → «Рецепты» → «Научить»: положите рецепт в сетку (например, доски → ступени). Дальше плотник будет делать это по заявкам.",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutstonemason",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Каменотёс",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Каменотёс так же делает камень, кирпич и ступени. Обучите его нужным рецептам.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "fe33ae55-29af-5f04-8caf-744df310e50f"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:stone_bricks",
+          "Count": 64
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "ceabacb6-e69d-58a5-beb9-a5759aa045dc",
+      "name": {
+        "text": "Шахтёр",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Руды на Земле лежат глубоко — ниже нуля. Шахтёр копает без вашего участия и приносит руду на склад.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 135,
+      "icon": {
+        "id": "minecolonies:blockhutminer",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhutminer",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Шахта",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте шахту уровня 1 и наймите шахтёра. Ему нужны кирки, факелы, лестницы и доски для крепи — всё это он запросит. Шахта уходит вниз уровнями, чем выше уровень здания — тем глубже.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "229fd30f-1021-58ae-a01d-0d8eb826ec7d"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:iron_ingot",
+          "Count": 8
+        },
+        {
+          "id": "minecraft:torch",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "79ba3c69-276b-581d-b8d9-5f502506db49",
+      "name": {
+        "text": "Небо темнеет",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Погода на Земле не похожа на талосскую тишину: здесь бывают штормы и торнадо. Флюгер Weather2 покажет, откуда ждать беды.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 135,
+      "icon": {
+        "id": "weather2:wind_vane",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "weather2:wind_vane",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Флюгер",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите флюгер и поставьте на крышу. Анемометр в руке покажет скорость ветра.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "c6947620-4c2a-5c58-80b3-476fbdef121e"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "weather2:anemometer",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "886a2fc9-4b59-51b0-adc8-b08a10137539",
+      "name": {
+        "text": "Ветер сорвал крышу",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Первый шторм прошёл. Что-то сорвано, что-то сломано — время чинить.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 135,
+      "icon": {
+        "id": "minecraft:oak_planks",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:oak_planks",
+                "Count": 32
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "minecraft:cobblestone",
+                "Count": 16
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Ремонт",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "После первого шторма имей при себе 32 доски и 16 булыжника на ремонт — книга их не забирает. Разрушенное здание колонии чинится через его окно → «Починить».",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "79ba3c69-276b-581d-b8d9-5f502506db49"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:oak_planks",
+          "Count": 32
+        },
+        {
+          "id": "minecraft:cobblestone",
+          "Count": 16
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fcb2dc1b-4272-5031-9229-6a6e2ce6f47b",
+      "name": {
+        "text": "Пять голосов",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Пять жителей, склад, еда и крыша над головой — колония официально жива. Дальше — рост и оборона.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 135,
+      "icon": {
+        "id": "minecraft:emerald",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:checkbox",
+          "description": {
+            "text": "Пять жителей",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Доведите колонию до 5 жителей (Ратуша → «Жители»). Новые приходят сами, если есть свободные дома, или через таверну. Отметьте галочку, когда пятый придёт. Открывает главы «Рост колонии» и «Оборона».",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "3b9b8d57-a981-5b90-aeaf-0600e5477090",
+        "9d3bc084-8a6a-508e-8a33-1d4f14ed5a43",
+        "ceabacb6-e69d-58a5-beb9-a5759aa045dc"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:emerald",
+          "Count": 4
+        },
+        {
+          "id": "minecraft:golden_apple",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

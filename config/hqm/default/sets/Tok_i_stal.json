@@ -1,0 +1,506 @@
+{
+  "name": "Ток и сталь",
+  "reputationBar": [],
+  "description": {
+    "text": "Immersive Engineering и Powah — то, чего не было на Талосе: кокс, сталь, провода и ток для колонии.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "72db5fb2-e661-5dcd-966e-b69864efb52f",
+      "name": {
+        "text": "Коксовая печь",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Сталь начинается с кокса. Коксовая печь IE — мультиблок 3×3×3 из коксового кирпича.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "immersiveengineering:coke_oven",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "immersiveengineering:coal_coke",
+                "Count": 16
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Кокс",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Соберите коксовую печь (кликните молотом IE по центру), загрузите уголь, получите 16 кокса и креозот.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "ceabacb6-e69d-58a5-beb9-a5759aa045dc"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "immersiveengineering:hammer",
+          "Count": 1
+        },
+        {
+          "id": "immersiveengineering:treated_wood_horizontal",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "079e7d2f-635e-5941-b775-5b39e3ca6338",
+      "name": {
+        "text": "Доменная печь",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Кокс + железо = сталь. Доменная печь IE — 3×3×3 из доменного кирпича.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "immersiveengineering:blast_furnace",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "immersiveengineering:ingot_steel",
+                "Count": 16
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "16 стали",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Постройте доменную печь IE и выплавьте 16 стальных слитков.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "72db5fb2-e661-5dcd-966e-b69864efb52f"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "immersiveengineering:storage_steel",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "85ede3f5-9e40-5bf8-bda4-7fde331b0094",
+      "name": {
+        "text": "Ветряк",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Первый ток: ветряк IE на динамо. Чем выше — тем сильнее ветер.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "immersiveengineering:windmill",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "immersiveengineering:windmill",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "immersiveengineering:dynamo",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Ветряк и динамо",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Поставьте динамо, ветряк на его ось, повыше над колонией.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "079e7d2f-635e-5941-b775-5b39e3ca6338"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "immersiveengineering:wirecoil_copper",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "0ccea867-279e-518a-a6ca-5b5c179d68a5",
+      "name": {
+        "text": "Провода",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Ток по проводам: коннекторы, катушка, конденсатор.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "immersiveengineering:connector_lv",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "immersiveengineering:connector_lv",
+                "Count": 4
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "immersiveengineering:wirecoil_copper",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "immersiveengineering:capacitor_lv",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Проводка",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Четыре коннектора НН, медная катушка (кликните по двум коннекторам) и конденсатор НН для хранения.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "85ede3f5-9e40-5bf8-bda4-7fde331b0094"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "immersiveengineering:wirecutter",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "634d2728-b404-5395-b60b-6e399ff1a596",
+      "name": {
+        "text": "Powah",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Powah — компактная энергия: генераторы, ячейки, кабели. Начало — топочный генератор и стартовая ячейка.",
+        "isTranslationKey": false
+      },
+      "x": 325,
+      "y": 25,
+      "icon": {
+        "id": "powah:furnator_starter",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "powah:furnator_starter",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "powah:energy_cell_starter",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "powah:energy_cable_starter",
+                "Count": 8
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Стартовый набор",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите топочный генератор, ячейку и 8 кабелей стартового уровня.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "079e7d2f-635e-5941-b775-5b39e3ca6338"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "powah:uraninite",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "de3cac66-2450-5aa0-bb3d-2640e8468a14",
+      "name": {
+        "text": "Заряженная сталь",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Все продвинутые блоки Powah требуют заряженную сталь: сфера + стержни.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 80,
+      "icon": {
+        "id": "powah:steel_energized",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "powah:energizing_orb",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "powah:energizing_rod_starter",
+                "Count": 4
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Сфера зарядки",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Сфера зарядки и 4 стержня вокруг неё, подайте ток.",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:consume",
+          "items": [
+            {
+              "item": {
+                "id": "powah:steel_energized",
+                "Count": 8
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "8 заряженной стали",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Зарядите 8 слитков стали.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "634d2728-b404-5395-b60b-6e399ff1a596"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "powah:dry_ice",
+          "Count": 8
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "36011404-d7c9-5072-bbc1-4c8700c5d206",
+      "name": {
+        "text": "Тепло земли",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Термогенератор Powah на лаве или магме даёт ток без топлива.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 80,
+      "icon": {
+        "id": "powah:thermo_generator_basic",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "powah:thermo_generator_basic",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "powah:solar_panel_basic",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Термогенератор",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Базовый термогенератор (лава под ним, вода сверху) и солнечная панель.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "de3cac66-2450-5aa0-bb3d-2640e8468a14"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "powah:energy_cell_basic",
+          "Count": 1
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "c581ce97-84e4-59c5-8472-de846e736773",
+      "name": {
+        "text": "Эндер-сеть",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Эндер-ячейка передаёт энергию без проводов — в любую точку колонии.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 80,
+      "icon": {
+        "id": "powah:ender_cell_basic",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "powah:ender_cell_basic",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "powah:ender_gate_basic",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Эндер-ячейка и врата",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Эндер-ячейка хранит, врата раздают — на одном канале.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "36011404-d7c9-5072-bbc1-4c8700c5d206"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "powah:ender_core",
+          "Count": 2
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}

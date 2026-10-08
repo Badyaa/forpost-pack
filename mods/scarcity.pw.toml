@@ -1,0 +1,13 @@
+filename = "scarcity-1.1.5.jar"
+name = "Scarcity"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "77a806d74db07cdc62413a331782510710898e92"
+mode = 'metadata:curseforge'
+
+[update]
+[update.curseforge]
+file-id = 8196975
+project-id = 1421947

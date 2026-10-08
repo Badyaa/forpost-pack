@@ -1,0 +1,17 @@
+{
+    "type": "thermal:bottler",
+    "ingredients": [
+      {
+        "item": "exdeorum:porcelain_bucket"
+      },
+      {
+        "fluid": "minecraft:water",
+        "amount": 1000
+      }
+    ],
+    "result": [
+      {
+        "item": "exdeorum:porcelain_water_bucket"
+      }
+    ]
+  }

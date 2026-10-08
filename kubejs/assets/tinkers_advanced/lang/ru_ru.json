@@ -1,0 +1,18 @@
+{
+  "itemGroup.tinkers_advanced.tiac_misc": "Tinkers' Advanced | Разное",
+  "item.tinkers_advanced.ultra_dense_book": "Сверхплотная книга",
+  "tooltip.tinkers_advanced.ultra_dense_book1": "Очень плотная книга",
+  "tooltip.tinkers_advanced.ultra_dense_book2": "-Tinkers' Advanced // Руководство-",
+  "tooltip.tinkers_advanced.material_story": "Нажмите Shift, чтобы узнать больше...",
+  "tooltip.tinkers_advanced.material_banned": "Этот материал нельзя получить!",
+  "info.tinkers_advanced.hidden_material": "Скрытые материалы нельзя скрафтить обычным способом, поэтому вы не найдёте их рецепт. Зажмите Shift и решите предложенную головоломку. Если Shift не работает, материал, возможно, запрещён, и вы никогда его не получите, увы :(",
+  "tooltip.tinkers_advanced.energy": "Макс. энергия: ",
+  "tooltip.tinkers_advanced.power_multiplier": "Множитель мощности: ",
+  "tool_stat.tinkers_advanced.flux_core.capacity_factor.description": "Множитель макс. энергии, на который умножается базовая ёмкость.",
+  "tool_stat.tinkers_advanced.flux_core.generate_factor.description": "Скорость генерации/потребления для черт энергомодулей.",
+  "tool_stat.tinkers_advanced.capacity_factor": "Макс. энергия",
+  "tool_stat.tinkers_advanced.generate_factor": "Множитель мощности",
+  "modifier.tinkers_advanced.plasma_proof_goggles": "Плазмостойкие очки",
+  "modifier.tinkers_advanced.plasma_proof_goggles.flavor": "Плавательные очки для лавы.",
+  "modifier.tinkers_advanced.plasma_proof_goggles.description": "Убирает туман жидкости и эффект огня на экране, если надеты как шлем."
+}

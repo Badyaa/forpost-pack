@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "tag": "ae2:all_quartz_and_quartz_dust"
+    }
+  ],
+  "result": {
+	"count": 2,
+    "item": "minecraft:andesite"
+  }
+}

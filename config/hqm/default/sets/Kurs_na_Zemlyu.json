@@ -1,0 +1,255 @@
+{
+  "name": "Курс на Землю",
+  "reputationBar": [],
+  "description": {
+    "text": "Талос отпускает вас. Впереди перелёт домой и руины колонии, которую предстоит возродить.",
+    "isTranslationKey": false
+  },
+  "quests": [
+    {
+      "uuid": "40d93d86-76a8-56e2-99ff-6ccf670cf383",
+      "name": {
+        "text": "Билет домой",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Модуль MAT принял слабый сигнал маяка с Земли. Связи с колонией нет уже много лет, но координаты верны. Для возвращения нужна ракета первого уровня и стартовая площадка.",
+        "isTranslationKey": false
+      },
+      "x": 25,
+      "y": 25,
+      "icon": {
+        "id": "ad_astra:tier_1_rocket",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "ad_astra:tier_1_rocket",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Ракета",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Соберите ракету первого уровня — детали и топливо описаны в главе «В бесконечность и дальше».",
+            "isTranslationKey": false
+          }
+        },
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "ad_astra:launch_pad",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Площадка",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Стартовая площадка ставится на ровной поверхности, ракета — на неё. Топливо заливается вёдрами прямо в ракету.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "47f100be-33d2-5223-84ae-11465b8f53ad"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "ad_astra:fuel_bucket",
+          "Count": 3
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "fd7698ad-31dd-5421-bb5c-7abc821cf282",
+      "name": {
+        "text": "Дома",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Вход в атмосферу, посадка. Воздух пахнет травой — вы на Земле. Сигнал маяка ведёт туда, где когда-то стояла колония.",
+        "isTranslationKey": false
+      },
+      "x": 100,
+      "y": 25,
+      "icon": {
+        "id": "minecraft:grass_block",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:location",
+          "description": {
+            "text": "Посадка на Земле",
+            "isTranslationKey": false
+          },
+          "locations": [
+            {
+              "name": {
+                "text": "Земля",
+                "isTranslationKey": false
+              },
+              "x": 0,
+              "y": 64,
+              "z": 0,
+              "dim": "varkin_system:earth",
+              "radius": -1,
+              "visible": "NONE",
+              "icon": {
+                "id": "minecraft:grass_block",
+                "Count": 1
+              }
+            }
+          ],
+          "longDescription": {
+            "text": "Сядьте в ракету, зажмите пробел для взлёта, на карте планет выберите «Земля». Квест засчитается сам, как только вы окажетесь в этом мире.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "40d93d86-76a8-56e2-99ff-6ccf670cf383"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:bread",
+          "Count": 16
+        },
+        {
+          "id": "minecraft:torch",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "e2389745-8948-5bb4-8639-f67568f578e7",
+      "name": {
+        "text": "Лагерь снабжения",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "От старой колонии остались одни воспоминания. Начинать придётся с лагеря снабжения MineColonies — в нём есть всё для первых дней: ратуша, строительный инструмент, еда и инструменты.",
+        "isTranslationKey": false
+      },
+      "x": 175,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:supplycampdeployer",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:supplycampdeployer",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Лагерь снабжения",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Скрафтите «Лагерь снабжения» (или «Корабль снабжения», если рядом вода). Возьмите его в руку, наведите на ровную площадку — зелёный контур означает, что место подходит, — и кликните ПКМ. Лагерь одноразовый: второй раз поставить нельзя.",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "fd7698ad-31dd-5421-bb5c-7abc821cf282"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:oak_log",
+          "Count": 32
+        },
+        {
+          "id": "minecraft:cobblestone",
+          "Count": 64
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    },
+    {
+      "uuid": "614911e6-33d1-5106-8db1-f5c0ff5da346",
+      "name": {
+        "text": "Ратуша",
+        "isTranslationKey": false
+      },
+      "description": {
+        "text": "Ратуша — сердце колонии: она определяет её границы и без неё жители не придут. Возьмите блок ратуши из сундука лагеря и поставьте там, где будет центр поселения.",
+        "isTranslationKey": false
+      },
+      "x": 250,
+      "y": 25,
+      "icon": {
+        "id": "minecolonies:blockhuttownhall",
+        "Count": 1
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "hardcorequesting:detect",
+          "items": [
+            {
+              "item": {
+                "id": "minecolonies:blockhuttownhall",
+                "Count": 1
+              },
+              "precision": "FUZZY"
+            }
+          ],
+          "description": {
+            "text": "Блок ратуши",
+            "isTranslationKey": false
+          },
+          "longDescription": {
+            "text": "Ставьте ратушу как обычный блок: откроется окно — нажмите «Создать колонию» и дайте ей имя. Вокруг ратуши колония займёт территорию (по умолчанию 4 чанка в каждую сторону) — выбирайте место с запасом, потом её не сдвинуть. Открывает главу «Первое поселение».",
+            "isTranslationKey": false
+          }
+        }
+      ],
+      "prerequisites": [
+        "e2389745-8948-5bb4-8639-f67568f578e7"
+      ],
+      "optionlinks": [],
+      "reward": [
+        {
+          "id": "minecraft:brick",
+          "Count": 32
+        }
+      ],
+      "rewardchoice": [],
+      "commandrewards": []
+    }
+  ]
+}
