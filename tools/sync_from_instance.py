@@ -30,7 +30,9 @@ PRESERVE_PATTERNS = [r"^config/DistantHorizons", r"^config/embeddium", r"^config
                      r"^config/.*client", r"^config/xaero", r"^config/journeymap", r"^config/sodium", r"^config/iris",
                      r"^shaderpacks/", r"^options\.txt$"]
 # лицензия "All Rights Reserved": свой (пропатченный) jar в публичный репозиторий не кладём, ставим оригинал по ссылке
-NO_REDIST = {"ColonyRank-1.20.1-2.0.1.jar"}
+# серверный мод: клиентам не нужен (в jar ошибка mods.toml, из-за которой клиентский Forge отклоняет файл) - в сборку не включаем
+CLIENT_EXCLUDE = {"ColonyRank-1.20.1-2.0.1.jar"}
+NO_REDIST = set()
 # моды, закрытые для сторонних лаунчеров в API CurseForge: берём тот же файл (тот же хеш) с Modrinth
 MODRINTH_OVERRIDE = {
     "betterblockz-0.2.9-1.20.1-forge.jar": ("oPU4euBQ", "j885m1Ia",
@@ -79,7 +81,7 @@ for fn in sorted(os.listdir(idx_dir)):
     if not fn.endswith(".pw.toml"): continue
     t = open(os.path.join(idx_dir, fn), encoding="utf8").read()
     fname = get(t, "filename")
-    if fname not in jars: continue
+    if fname not in jars or fname in CLIENT_EXCLUDE: continue
     hf, h = get(t, "hash-format", "download"), get(t, "hash", "download")
     if sha(os.path.join(SRC, "mods", fname), hf) != h and fname not in NO_REDIST:
         local.append(fname); continue          # пропатчен -> шлём сам файл
@@ -100,7 +102,7 @@ for fn in sorted(os.listdir(idx_dir)):
     meta_ok[fname] = True
     open(os.path.join(OUT, "mods", fn), "w", encoding="utf8").write("\n".join(out) + "\n")
 for j in sorted(jars):
-    if j in meta_ok: continue
+    if j in meta_ok or j in CLIENT_EXCLUDE: continue
     if j not in local: local.append(j)
 for j in local:
     shutil.copy2(os.path.join(SRC, "mods", j), os.path.join(OUT, "mods", RENAME.get(j, j)))

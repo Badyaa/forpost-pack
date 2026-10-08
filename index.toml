@@ -12150,11 +12150,6 @@ hash = "2ee03cb1af875fdb9013c5f2aff89b5b9f77c8a05d1e94267548a69f69234df2"
 metafile = true
 
 [[files]]
-file = "mods/colonyrank.pw.toml"
-hash = "a869691ab1bcfc143af5582dcf9d5124648d5a0fa493f75969aa87b5f4f50df6"
-metafile = true
-
-[[files]]
 file = "mods/colonyweb.pw.toml"
 hash = "6174fc47e5b7047fb3a610b946944aff1a378beea41640879d84c24bcc523925"
 metafile = true
