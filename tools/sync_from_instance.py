@@ -133,6 +133,7 @@ for root, _, files in os.walk(OUT):
     for f in files:
         full = os.path.join(root, f); rel = os.path.relpath(full, OUT).replace(os.sep, "/")
         if rel in ("pack.toml", "index.toml") or rel.split("/")[0] in KEEP or rel == "README.md" or f == ".gitignore": continue
+        if f in SKIP_NAMES or f.startswith("._"): continue   # мусор Finder (.DS_Store и т.п.) в индекс не попадает
         entries.append(rel)
 entries.sort()
 lines = ['hash-format = "sha256"', ""]
