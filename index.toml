@@ -2152,7 +2152,7 @@ hash = "fb8bb1608789282418a3da666de641f33a48ee34f8a823b341c8d064dc5e4d3b"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "4a9c5d7f297bd803a4e9ff3f6e5a05a43d612ff9b747e2926096d80ff8d48015"
+hash = "92663bedcb39a6061ccdca1a54daeb0785c186accd5fd619ddbedf8d0ca67ade"
 preserve = true
 
 [[files]]
@@ -4581,15 +4581,15 @@ hash = "2c4709d78b448f0beb0321fb92fbee03b1d9ed3c312a0b146c56472aad0fd94a"
 
 [[files]]
 file = "config/openloader/data/dustplanet/data/exdeorum/recipes/diamond_mesh.json"
-hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+hash = "c0d53d3b6425a381900c0889182aacc49c849fa8fb2f2e4809e2d66d74e13ba2"
 
 [[files]]
 file = "config/openloader/data/dustplanet/data/exdeorum/recipes/flint_mesh.json"
-hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+hash = "298f70090bbd6d6a122691d6c94f613fc55940e910eeec5c63932edc72779460"
 
 [[files]]
 file = "config/openloader/data/dustplanet/data/exdeorum/recipes/golden_mesh.json"
-hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+hash = "41744131d904c831acdfaa1b47624ce19f3d542d2dde61747bc233c3532cd8bd"
 
 [[files]]
 file = "config/openloader/data/dustplanet/data/exdeorum/recipes/hammer/basalt.json"
@@ -4641,7 +4641,7 @@ hash = "581eba170251f5fd1c434934308e39b0ae2ba04ed8ca49098b5e4e2c00d778c1"
 
 [[files]]
 file = "config/openloader/data/dustplanet/data/exdeorum/recipes/iron_mesh.json"
-hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+hash = "fe9fa486edd77d3505f464d7e2c47369a85f8f4e1a99f6dff000faf6f37fb835"
 
 [[files]]
 file = "config/openloader/data/dustplanet/data/exdeorum/recipes/ores/uranium_tag.json"
@@ -7545,7 +7545,7 @@ preserve = true
 
 [[files]]
 file = "config/powah.json5"
-hash = "49df785ce63047a292d123d635ba58c5abaa3e6bb7aaa7dde14ee1cfa4b59bba"
+hash = "d0841745b1c206f25128bcd7271d363a39958201d90edc4528203df8244e0c71"
 
 [[files]]
 file = "config/puffish_skills/categories/forpost/category.json"
@@ -11532,7 +11532,7 @@ hash = "90d70d689887af82715eb223250acf61226de91f10273e33eebcb39432454e46"
 
 [[files]]
 file = "kubejs/server_scripts/farmers_delight_removal.js"
-hash = "4778b61f39bf1c05b499b6584858b2ed385dbbc7bea9a40c5f4761390e9ef6f5"
+hash = "ab3715ade107d66df9bcd733917f3069f87aa9e315a619b92f4a104de64ce559"
 
 [[files]]
 file = "kubejs/server_scripts/force_purity_nbt.js"
@@ -11552,7 +11552,7 @@ hash = "401883a2ae1b9850f8faa3ce8545962ee70b3c6ecee7bc879da632ee040a1195"
 
 [[files]]
 file = "kubejs/server_scripts/forpost_bases.js"
-hash = "faa7510b2ddf44e329ca4a196a45f45295bc33b7a09b6cf82d24327316cb3ce6"
+hash = "f5d2cee3c7378056743f38f9c822811a70f5bf2b47e364b3aee7d10e30e6105c"
 
 [[files]]
 file = "kubejs/server_scripts/forpost_bonemeal.js"
@@ -11600,7 +11600,11 @@ hash = "93cb0cddc2edbb8b1730b6e1b2c0e903ba270831c71dc9d12e5299b857c20a81"
 
 [[files]]
 file = "kubejs/server_scripts/forpost_loot_tiers.js"
-hash = "354f28cb70f1e2487f92cfbc038037f7b37069e12fccff5fca81054253bde2dd"
+hash = "075c0ce7917f512e30c2a7bac31996b44204a96454de04a18695eeb34213d338"
+
+[[files]]
+file = "kubejs/server_scripts/forpost_news.js"
+hash = "398a900e531024a187bbc918e0ce84422d12a68b6c097372da401cf8d7b140cf"
 
 [[files]]
 file = "kubejs/server_scripts/forpost_no_sunproof_zombies.js"
@@ -11652,7 +11656,7 @@ hash = "ecb165d90b42a1c5ad8153b1b6e2d6cd2b8156773c0f86240cd95e5f9d8ca3d7"
 
 [[files]]
 file = "kubejs/server_scripts/leaf_drops.js"
-hash = "6ff1279285e96ef88fdc41cde08d67ec293c31996bde4193572ce79d7e8394d1"
+hash = "028619c707a6b209b2a0c63dba55e902c24827dcb91634f9253357930ce020c0"
 
 [[files]]
 file = "kubejs/server_scripts/mekanism_rework.js"
@@ -11672,7 +11676,7 @@ hash = "91d03bd05a4be855f76eb2892de7b3270ab051b94ed536c81c89ee24aae658f8"
 
 [[files]]
 file = "kubejs/server_scripts/plasteel.js"
-hash = "65ada597780cdbd934c85bd90d488d225ff2c8d904dd18385e172242fdb41d46"
+hash = "30a25216ddb40f0d62ca42e30b62c929cbe6b66a85ef7d6e06b2851dcc02cae5"
 
 [[files]]
 file = "kubejs/server_scripts/pneumaticcraft.js"
@@ -11680,7 +11684,7 @@ hash = "407036b126dc404f99e75baa881f6fde9466068a4dcf88dd31309542f9711571"
 
 [[files]]
 file = "kubejs/server_scripts/recycling/hammer.js"
-hash = "860de1c87cf1cd2838e346bbd5767ac78161e7aa5e869e83781c92c64f2946e2"
+hash = "d23cf2da0b4b36e614d9862af82e4f55d02070dba42100053a45b30f150fd22c"
 
 [[files]]
 file = "kubejs/server_scripts/recycling/melting.js"
@@ -11696,7 +11700,7 @@ hash = "8cf3dd4ded7c26e0c97a8408202cda1ab2a719e4df4325d25a5c80cc038e4d32"
 
 [[files]]
 file = "kubejs/server_scripts/removed_recipes.js"
-hash = "e524ed8fd5d3e277cfb05d2123110242f0ce56b60e88f93be8cd16bcd0a9a0e2"
+hash = "21008398f24515d3cf6a9437f48c370aa64a33ab5ea6f19c3f5b7fe171a8493d"
 
 [[files]]
 file = "kubejs/server_scripts/replace_vanilla_tool_recipes.js"
@@ -11744,7 +11748,7 @@ hash = "c4d88c9b26dfe28a5bb44bb90cb7c489a4032cd2268cf572d8e72deca8ff9092"
 
 [[files]]
 file = "kubejs/server_scripts/tags/bookshelf_books.js"
-hash = "a7db7667e44532dfc4f165ceceb4cfd7de99e7699215e64d256de75337768e89"
+hash = "ef0a3517cb7fb49265839bd7bdd9682450f00a45a7588d63539400dbbaa4705a"
 
 [[files]]
 file = "kubejs/server_scripts/tags/conductive.js"
@@ -11760,7 +11764,7 @@ hash = "cb5e9403a2c8f30e4f1678913f0801b5a3d6b008bcd3fa5823a870bd35aebaf2"
 
 [[files]]
 file = "kubejs/server_scripts/tags/misc.js"
-hash = "dc02e4b424b1aef4bc55f13693f93edb4475d0a41b16953d410823d4797d3853"
+hash = "fe5db76d384918961e8b90a645f9ba24cbc5ae1cdb4a68e3a553130c529b7e89"
 
 [[files]]
 file = "kubejs/server_scripts/tags/plastic_scraps.js"
@@ -11808,7 +11812,7 @@ hash = "94dab13faca4cf36aed649c5b6332295c5cac50adc52ed63fbed82bedb32b06a"
 
 [[files]]
 file = "kubejs/server_scripts/thermal_tweaks.js"
-hash = "277ec24756d7a6b84b2eea3bd921e61b74e37eb9cefd7addcfea050bef1bea7e"
+hash = "401661f8aefd1d16e70b365c9e7be9de4b7cd63c3b40a5d62270d873998479e9"
 
 [[files]]
 file = "kubejs/server_scripts/world/darkness.js"
@@ -11943,11 +11947,6 @@ metafile = true
 [[files]]
 file = "mods/advanced-backups.pw.toml"
 hash = "6223ca6d8d10d895b80b1310a08d41be6d26b9962d44045447cde083a450172c"
-metafile = true
-
-[[files]]
-file = "mods/advanced-loot-info.pw.toml"
-hash = "6b95ddb129be01e7936bb469d20b924d652fee1ffa368a8b3478744f90754946"
 metafile = true
 
 [[files]]

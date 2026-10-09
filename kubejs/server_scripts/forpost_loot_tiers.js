@@ -129,6 +129,31 @@ function liveTier(level, x, y, z) {
   return best
 }
 
+// 09.10: бонус выдаётся ОДИН раз на сундук. Раньше, если сундук не открылся (Shift+блок в руке, блок/кошка
+// над сундуком), тег LootTable оставался и бонус можно было добывать бесконечно. Метка — в server.persistentData
+// (JSON по ключу измерение|x|y|z), как в forpost_armory/forpost_bases.
+var DONE_KEY = 'forpost_loot_done'
+var DONE = null
+function doneMap(server) {
+  if (DONE) return DONE
+  DONE = {}
+  try { var raw = server.persistentData.getString(DONE_KEY); if (raw && raw.length) DONE = JSON.parse(raw) } catch (e) { console.error('[forpost_loot_tiers] done load: ' + e); DONE = {} }
+  return DONE
+}
+function markDone(server, key) {
+  var m = doneMap(server)
+  m[key] = 1
+  var raw = JSON.stringify(m)
+  // NBT-строка не длиннее 65535 байт: при переполнении забываем самую старую четверть меток
+  // (у давно открытых сундуков тега LootTable уже нет, повторного бонуса не будет)
+  if (raw.length > 50000) {
+    var ks = Object.keys(m), cut = Math.ceil(ks.length / 4)
+    for (var i = 0; i < cut; i++) delete m[ks[i]]
+    raw = JSON.stringify(m)
+  }
+  server.persistentData.putString(DONE_KEY, raw)
+}
+
 BlockEvents.rightClicked(event => {
   if (String(event.hand) !== 'MAIN_HAND') return
   var block = event.block
@@ -143,12 +168,15 @@ BlockEvents.rightClicked(event => {
     if (table.indexOf('forpost:') === 0) return
     var x = block.x, y = block.y, z = block.z
     var level = event.level
+    var doneKey = dimId(level) + '|' + x + '|' + y + '|' + z // 09.10
+    if (doneMap(event.server)[doneKey]) return // 09.10: бонус этого сундука уже выдан
     if (global.forpostArmoryLocked && global.forpostArmoryLocked(event.server, x, y, z)) return // шкаф арсенала заперт
     var tier = Math.max(spawnerTier(level, x, y, z), liveTier(level, x, y, z))
     // арсенал вышки (forpost_armory.js): после зачистки охраны — не ниже ★★★
     if (global.forpostArmoryTier) tier = Math.max(tier, global.forpostArmoryTier(event.server, x, y, z))
     var theme = global.forpostRoomTheme ? global.forpostRoomTheme(table) : null
     if (tier <= 0 && !theme) return
+    markDone(event.server, doneKey) // 09.10: помечаем до вставки — повторный ПКМ бонус не даст
     // loot insert сначала раскладывает обычный лут сундука, затем докладывает бонус
     var at = 'execute in ' + dimId(level) + ' run loot insert ' + x + ' ' + y + ' ' + z + ' loot '
     if (theme) event.server.runCommandSilent(at + 'forpost:rooms/' + theme)

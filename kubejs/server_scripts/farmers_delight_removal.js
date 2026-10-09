@@ -1,3 +1,4 @@
+;(function(){ // 09.10: файл обёрнут в IIFE (правило Rhino)
 ServerEvents.recipes(event => {
     // Removed because they already exist in other ways
     [
@@ -246,7 +247,7 @@ ServerEvents.tags('item', event => {
         'legumedelight:bean_burger',
         'legumedelight:bean_burrito',
         'legumedelight:beans_and_rice',
-        'legumedelight:pasta_with_mutton_chop',
+        'farmersdelight:pasta_with_mutton_chop', // 09.10: в legumedelight 1.3.1 такого нет, есть только у Farmer's Delight
         'legumedelight:pasta_with_tomato_sauce',
         'legumedelight:trail_mix',
     )
@@ -269,7 +270,7 @@ ServerEvents.tags('item', event => {
         'legumedelight:bean_burrito',
         'legumedelight:beans_and_rice',
         'legumedelight:chili',
-        'legumedelight:pasta_with_mutton_chop',
+        'farmersdelight:pasta_with_mutton_chop', // 09.10: в legumedelight 1.3.1 такого нет, есть только у Farmer's Delight
         'legumedelight:peanut_bar',
         'legumedelight:trail_mix',
     )
@@ -294,7 +295,7 @@ ServerEvents.tags('item', event => {
         'legumedelight:bean_burrito',
         'legumedelight:beans_and_rice',
         'legumedelight:chili',
-        'legumedelight:pasta_with_mutton_chop',
+        'farmersdelight:pasta_with_mutton_chop', // 09.10: в legumedelight 1.3.1 такого нет, есть только у Farmer's Delight
         'legumedelight:pasta_with_tomato_sauce',
     )
     event.add('diet:fruits',
@@ -402,7 +403,7 @@ ServerEvents.tags('item', event => {
         'farmersdelight:mutton_chops',
         'farmersdelight:mutton_wrap',
         'farmersdelight:pasta_with_mutton_chop',
-        'farmersdelight:roasted_mutton_chops_block',
+        // 09.10: убран несуществующий farmersdelight:roasted_mutton_chops_block (блок = сам предмет roasted_mutton_chops)
         'farmersdelight:roasted_mutton_chops',
         'farmersdelight:shepherds_pie',
         'farmersdelight:shepherds_pie_block',
@@ -423,7 +424,7 @@ ServerEvents.tags('item', event => {
     // Removed until player unlocks rabbits
     event.add('desolate_planet:rabbit_sourced',
         'minecraft:cooked_rabbit',
-        'minecraft:raw_rabbit',
+        'minecraft:rabbit', // 09.10: было minecraft:raw_rabbit — в 1.20 сырой кролик называется minecraft:rabbit
         'minecraft:rabbit_stew',
     )
 
@@ -443,7 +444,7 @@ ServerEvents.tags('item', event => {
         'farmersdelight:fish_stew',
         'farmersdelight:squid_ink_pasta',
         'farmersdelight:rice_roll_medley_block',
-        'farmersdelight:rice_roll_medley',
+        // 09.10: убран несуществующий farmersdelight:rice_roll_medley (есть только _block)
         'farmersdelight:salmon_roll',
         'farmersdelight:grilled_salmon',
     )
@@ -757,3 +758,4 @@ PlayerEvents.inventoryChanged(event => {
     }
 
 });
+})()

@@ -1,3 +1,4 @@
+;(function(){ // 09.10: файл обёрнут в IIFE (правило Rhino)
 ServerEvents.tags('item', event => {
     event.add('forge:storage_blocks/electrum',
         'createaddition:electrum_block'
@@ -97,12 +98,15 @@ ServerEvents.tags('block', event => {
         event.add('desolate_planet:sinks', id);
     });
 
+    // 09.10: Valkyrien Skies / Eureka в сборке нет — тег добавляем только если мод установлен
+    if (Platform.isLoaded('vs_eureka')) {
     event.add('vs_eureka:assemble_blacklist',
         'exdeorum:crushed_deepslate',
         'exdeorum:dust',
         'minecraft:gravel',
         'minecraft:sand',
     )
+    }
 
     event.add('desolate_planet:superheats_to_glass',
         '#minecraft:sand',
@@ -126,3 +130,4 @@ ServerEvents.tags('fluid', event => {
         '#forge:redstone'
     )
 });
+})()

@@ -1,9 +1,10 @@
+;(function(){ // 09.10: файл обёрнут в IIFE (правило Rhino)
 ServerEvents.recipes(event => {
   event.replaceInput(
     {
       input: 'minecraft:stone', output:
         [
-          "nfm:beige_modern_chair",
+          // 09.10: nfm:beige_modern_chair убран — бежевые предметы nfm не регистрируются
           "nfm:black_modern_chair",
           "nfm:blue_modern_chair",
           "nfm:brown_modern_chair",
@@ -21,7 +22,7 @@ ServerEvents.recipes(event => {
           "nfm:white_modern_chair",
           "nfm:yellow_modern_chair",
 
-          "nfm:beige_modern_coffee_table",
+          // 09.10: nfm:beige_modern_coffee_table убран — бежевые предметы nfm не регистрируются
           "nfm:black_modern_coffee_table",
           "nfm:blue_modern_coffee_table",
           "nfm:brown_modern_coffee_table",
@@ -39,7 +40,7 @@ ServerEvents.recipes(event => {
           "nfm:white_modern_coffee_table",
           "nfm:yellow_modern_coffee_table",
 
-          "nfm:beige_modern_kitchen_counter",
+          // 09.10: nfm:beige_modern_kitchen_counter убран — бежевые предметы nfm не регистрируются
           "nfm:black_modern_kitchen_counter",
           "nfm:blue_modern_kitchen_counter",
           "nfm:brown_modern_kitchen_counter",
@@ -57,7 +58,7 @@ ServerEvents.recipes(event => {
           "nfm:white_modern_kitchen_counter",
           "nfm:yellow_modern_kitchen_counter",
 
-          "nfm:beige_modern_kitchen_sink",
+          // 09.10: nfm:beige_modern_kitchen_sink убран — бежевые предметы nfm не регистрируются
           "nfm:black_modern_kitchen_sink",
           "nfm:blue_modern_kitchen_sink",
           "nfm:brown_modern_kitchen_sink",
@@ -75,7 +76,7 @@ ServerEvents.recipes(event => {
           "nfm:white_modern_kitchen_sink",
           "nfm:yellow_modern_kitchen_sink",
 
-          "nfm:beige_modern_table",
+          // 09.10: nfm:beige_modern_table убран — бежевые предметы nfm не регистрируются
           "nfm:black_modern_table",
           "nfm:blue_modern_table",
           "nfm:brown_modern_table",
@@ -101,10 +102,27 @@ ServerEvents.recipes(event => {
           "nfm:shower_head_light",
           "nfm:sink_dark",
           "nfm:sink_light",
-          "nfm:_television_stand"
+          // 09.10: было "nfm:_television_stand" (опечатка, без цвета) — развёрнуто по 16 цветам, как стулья выше
+          "nfm:white_television_stand",
+          "nfm:light_gray_television_stand",
+          "nfm:gray_television_stand",
+          "nfm:black_television_stand",
+          "nfm:brown_television_stand",
+          "nfm:red_television_stand",
+          "nfm:orange_television_stand",
+          "nfm:yellow_television_stand",
+          "nfm:lime_television_stand",
+          "nfm:green_television_stand",
+          "nfm:cyan_television_stand",
+          "nfm:light_blue_television_stand",
+          "nfm:blue_television_stand",
+          "nfm:purple_television_stand",
+          "nfm:magenta_television_stand",
+          "nfm:pink_television_stand"
         ]
     },
     'minecraft:stone',
     'varkin_system:white_plasteel_block'
   )
 });
+})()

@@ -135,7 +135,9 @@ function landedHints(server, player, base) {
 
 function assign(server, player, base) {
   player.persistentData.putInt('forpost_base', base.id + 1)
+  player.persistentData.putBoolean('forpost_assign_pending', true) // 09.10: снимется в done(); если игрок выйдет во время катсцены — доделаем при входе
   var done = () => {
+    player.persistentData.putBoolean('forpost_assign_pending', false) // 09.10
     sendHome(server, player, base)
     giveKit(server, player)
     landedHints(server, player, base)
@@ -147,7 +149,22 @@ function assign(server, player, base) {
   else done()
 }
 
+var CHOOSE_LOCK = {} // 09.10: ник -> время последнего chooseOwn (мс), защита от двойного клика
+
 function chooseOwn(server, player, kind) {
+  // 09.10: двойной «/base own» (кнопки в чате) создавал две базы: база назначается игроку только в конце tryPlace (через 3+ с).
+  var nowMs = Date.now()
+  var lastMs = CHOOSE_LOCK[player.username]
+  if (lastMs && nowMs - lastMs < 3000) return
+  CHOOSE_LOCK[player.username] = nowMs
+  var uid = String(player.uuid)
+  var mineBase = bases(server).find(b => b.id !== 0 && b.owner && (b.owner === player.username || (b.ownerId && b.ownerId === uid)))
+  if (mineBase) {
+    if (mineBase.sx === undefined) { player.tell(Text.yellow('Твоя база №' + mineBase.id + ' уже строится — подожди несколько секунд.')); return }
+    player.tell(Text.yellow('У тебя уже есть своя база №' + mineBase.id + ' — возвращаю на неё.'))
+    assign(server, player, mineBase)
+    return
+  }
   var ship = SHIPS[kind] || SHIPS.solo
   kind = SHIPS[kind] ? kind : 'solo'
   var list = bases(server)
@@ -219,9 +236,19 @@ PlayerEvents.loggedIn(event => {
     var b = playerBase(server, player)
     player.persistentData.putBoolean('forpost_descent', false)
     player.persistentData.putBoolean('forpost_in_kupol', false)
+    var pending = player.persistentData.getBoolean('forpost_assign_pending') // 09.10
+    player.persistentData.putBoolean('forpost_assign_pending', false) // 09.10
     server.scheduleInTicks(20, () => {
       run(server, 'gamemode survival ' + player.username)
-      if (b && b.sx !== undefined) { sendHome(server, player, b); giveKit(server, player) }
+      if (b && b.sx !== undefined) {
+        sendHome(server, player, b); giveKit(server, player)
+        // 09.10: onDone катсцены не вызывался — делаем привязку привата/группы OPAC и таблички при входе (forpostProtect идемпотентен)
+        try {
+          if (global.forpostProtect) global.forpostProtect(server, player, b)
+          if (global.forpostRefreshSigns) global.forpostRefreshSigns(server)
+        } catch (e) { console.error('[forpost_bases] login protect: ' + e) }
+        if (pending) landedHints(server, player, b)
+      }
     })
   }
   // новые игроки попадают в «Купол» (forpost_kupol.js)

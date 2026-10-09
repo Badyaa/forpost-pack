@@ -1,3 +1,4 @@
+;(function(){ // 09.10: файл обёрнут в IIFE (правило Rhino)
 ServerEvents.recipes(event => {
 	const woods = [
 		'oak',
@@ -31,7 +32,11 @@ ServerEvents.recipes(event => {
 		'pink'
 	]
 
-	function hammer(output, input) {
+	// 09.10: третий аргумент (опилки) раньше молча терялся. Рецепт exdeorum:hammer даёт ровно ОДИН результат,
+	// а при двух рецептах на один вход молот берёт только один, поэтому побочный продукт здесь не выдать.
+	// Опилки за эту же мебель уже даёт лесопилка (recycling/sawing.js, woodRecycle с extraOutput).
+	// Аргумент принимаем явно и не используем, чтобы это было видно при чтении.
+	function hammer(output, input, extraIgnored) {
 		event.custom({
 			type: 'exdeorum:hammer',
 			ingredient: [
@@ -84,12 +89,10 @@ ServerEvents.recipes(event => {
 	hammer('6x minecraft:iron_ingot', 'refurbished_furniture:dark_stove')
 	hammer('2x minecraft:iron_ingot', 'refurbished_furniture:light_range_hood')
 	hammer('2x minecraft:iron_ingot', 'refurbished_furniture:dark_range_hood')
-	hammer('1x minecraft:iron_ingot', 'refurbished_furniture:light_light_switch')
-	hammer('1x minecraft:iron_ingot', 'refurbished_furniture:dark_light_switch')
-	hammer('1x minecraft:iron_ingot', 'refurbished_furniture:light_light_switch')
-	hammer('1x minecraft:iron_ingot', 'refurbished_furniture:dark_light_switch')
-	hammer('1x minecraft:iron_ingot', 'refurbished_furniture:light_ceiling_fan')
-	hammer('1x minecraft:iron_ingot', 'refurbished_furniture:dark_ceiling_fan')
+	// 09.10: верные id выключателей (light_lightswitch/dark_lightswitch, как в melting.js), дубли убраны;
+	// light_ceiling_fan/dark_ceiling_fan без породы не существуют — вентиляторы по породам уже в цикле woods выше.
+	hammer('1x minecraft:iron_ingot', 'refurbished_furniture:light_lightswitch')
+	hammer('1x minecraft:iron_ingot', 'refurbished_furniture:dark_lightswitch')
 
 	hammer('2x minecraft:iron_ingot', 'refurbished_furniture:frying_pan')
 	hammer('4x minecraft:iron_ingot', 'refurbished_furniture:television')
@@ -101,3 +104,4 @@ ServerEvents.recipes(event => {
 	})
 
 })
+})()

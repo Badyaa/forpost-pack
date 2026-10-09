@@ -1,3 +1,4 @@
+;(function(){ // 09.10: файл обёрнут в IIFE (правило Rhino)
 ServerEvents.recipes(event => {
     // Removal by ID
     [
@@ -47,7 +48,7 @@ ServerEvents.recipes(event => {
     event.remove({
         output:
             [
-                "cookingforblockheads:sink",
+                // 09.10: убран "cookingforblockheads:sink" — мода CookingForBlockheads в сборке нет
                 "create:netherite_diving_boots",
                 "exdeorum:acacia_crucible",
                 "exdeorum:bamboo_crucible",
@@ -119,3 +120,4 @@ ServerEvents.recipes(event => {
 
     exdeorum.removeDefaultSieveRecipes(event);
 });
+})()
