@@ -13116,6 +13116,11 @@ file = "resourcepacks/tconjeidark.zip"
 hash = "f6f084ae1df2f43e4a0e70b7d361ea766a0db9be9429ef43614d3d1ad8c20be4"
 
 [[files]]
+file = "servers.dat"
+hash = "a8eb1455c78fb080eabd96e9007a9bf967e59e98320e904e578ba3f4a8a75092"
+preserve = true
+
+[[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.8.1.zip"
 hash = "3f1cd389e717b2e62f58edff222059b9c60de71b14bb49b517eb58318ce35b15"
 preserve = true

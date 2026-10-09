@@ -28,7 +28,7 @@ SKIP_EXT = (".bak", ".log", ".tmp", ".old")
 # файлы, которые игрок мог настроить под себя: не перезаписывать, если уже есть
 PRESERVE_PATTERNS = [r"^config/DistantHorizons", r"^config/embeddium", r"^config/oculus", r"^config/jei/",
                      r"^config/.*client", r"^config/xaero", r"^config/journeymap", r"^config/sodium", r"^config/iris",
-                     r"^shaderpacks/", r"^options\.txt$"]
+                     r"^shaderpacks/", r"^options\.txt$", r"^servers\.dat$"]
 # лицензия "All Rights Reserved": свой (пропатченный) jar в публичный репозиторий не кладём, ставим оригинал по ссылке
 # серверный мод: клиентам не нужен (в jar ошибка mods.toml, из-за которой клиентский Forge отклоняет файл) - в сборку не включаем
 CLIENT_EXCLUDE = {"ColonyRank-1.20.1-2.0.1.jar"}
@@ -126,6 +126,43 @@ if os.path.exists(wp):
 # минимальный options.txt (язык и ресурспак); применяется только если у игрока его ещё нет
 with open(os.path.join(OUT, "options.txt"), "w", encoding="utf8") as f:
     f.write('lang:ru_ru\nresourcePacks:["vanilla","mod_resources","file/Mob Grinding Utils Vanillafied.zip"]\n')
+
+# servers.dat: в сборке сразу есть сервер «Форпост» (берём видимые записи из servers.dat инстанса, скрытые/localhost не берём).
+# preserve=true: если у игрока уже есть свой список серверов, он не перезаписывается.
+def _nbt_servers(src_path, dst_path):
+    import struct
+    b = open(src_path, "rb").read(); pos = 0
+    def rs():
+        nonlocal pos
+        n = struct.unpack(">H", b[pos:pos+2])[0]; pos += 2
+        v = b[pos:pos+n].decode("utf8"); pos += n; return v
+    def rp(t):
+        nonlocal pos
+        if t == 1: v = b[pos]; pos += 1; return v
+        if t == 8: return rs()
+        if t == 9:
+            it = b[pos]; pos += 1; n = struct.unpack(">i", b[pos:pos+4])[0]; pos += 4
+            return [rp(it) for _ in range(n)]
+        if t == 10:
+            d = {}
+            while True:
+                tt = b[pos]; pos += 1
+                if tt == 0: return d
+                k = rs(); d[k] = rp(tt)
+        raise ValueError(t)
+    t = b[pos]; pos += 1; rs(); root = rp(t)
+    srv = [x for x in root.get("servers", []) if not x.get("hidden") and x.get("ip") not in ("localhost", "")]
+    def ws(x): e = x.encode("utf8"); return struct.pack(">H", len(e)) + e
+    out = b"\x0a" + ws("") + b"\x09" + ws("servers") + b"\x0a" + struct.pack(">i", len(srv))
+    for x in srv:
+        out += b"\x08" + ws("ip") + ws(x["ip"]) + b"\x08" + ws("name") + ws(x["name"])
+        if x.get("icon"): out += b"\x08" + ws("icon") + ws(x["icon"])
+        out += b"\x00"
+    out += b"\x00"
+    open(dst_path, "wb").write(out)
+    return [(x["name"], x["ip"]) for x in srv]
+if os.path.exists(os.path.join(SRC, "servers.dat")):
+    print("servers.dat:", _nbt_servers(os.path.join(SRC, "servers.dat"), os.path.join(OUT, "servers.dat")))
 
 # --- index.toml / pack.toml
 entries = []
