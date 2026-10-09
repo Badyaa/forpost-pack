@@ -11950,6 +11950,11 @@ hash = "6223ca6d8d10d895b80b1310a08d41be6d26b9962d44045447cde083a450172c"
 metafile = true
 
 [[files]]
+file = "mods/advanced-loot-info.pw.toml"
+hash = "6b95ddb129be01e7936bb469d20b924d652fee1ffa368a8b3478744f90754946"
+metafile = true
+
+[[files]]
 file = "mods/advancedae.pw.toml"
 hash = "3b855b9fe526231dd224dc5d0126afffd64779c350cfaaf11e799db5c6db2c31"
 metafile = true
