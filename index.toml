@@ -13122,7 +13122,6 @@ hash = "f6f084ae1df2f43e4a0e70b7d361ea766a0db9be9429ef43614d3d1ad8c20be4"
 [[files]]
 file = "servers.dat"
 hash = "c743a324bcfb74e6a8442506421d6935d88063dca6418d66c20a10f7df816b10"
-preserve = true
 
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.8.1.zip"

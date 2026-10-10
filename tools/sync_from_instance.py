@@ -28,7 +28,7 @@ SKIP_EXT = (".bak", ".log", ".tmp", ".old")
 # файлы, которые игрок мог настроить под себя: не перезаписывать, если уже есть
 PRESERVE_PATTERNS = [r"^config/DistantHorizons", r"^config/embeddium", r"^config/oculus", r"^config/jei/",
                      r"^config/.*client", r"^config/xaero", r"^config/journeymap", r"^config/sodium", r"^config/iris",
-                     r"^shaderpacks/", r"^options\.txt$", r"^servers\.dat$"]
+                     r"^shaderpacks/", r"^options\.txt$"]
 # лицензия "All Rights Reserved": свой (пропатченный) jar в публичный репозиторий не кладём, ставим оригинал по ссылке
 # серверный мод: клиентам не нужен (в jar ошибка mods.toml, из-за которой клиентский Forge отклоняет файл) - в сборку не включаем
 CLIENT_EXCLUDE = {"ColonyRank-1.20.1-2.0.1.jar"}
