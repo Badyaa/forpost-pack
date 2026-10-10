@@ -2152,7 +2152,7 @@ hash = "fb8bb1608789282418a3da666de641f33a48ee34f8a823b341c8d064dc5e4d3b"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "92663bedcb39a6061ccdca1a54daeb0785c186accd5fd619ddbedf8d0ca67ade"
+hash = "433442dbfd18088b4edf2ac40505f71dc3cf46060d54e363ac1ea3105ddd6984"
 preserve = true
 
 [[files]]
@@ -7545,7 +7545,7 @@ preserve = true
 
 [[files]]
 file = "config/powah.json5"
-hash = "d0841745b1c206f25128bcd7271d363a39958201d90edc4528203df8244e0c71"
+hash = "5a6253e9e31bd6767c01da2b924e0bfa2306971ca915abbe72beca8b15ad8a87"
 
 [[files]]
 file = "config/puffish_skills/categories/forpost/category.json"
@@ -13121,7 +13121,7 @@ hash = "f6f084ae1df2f43e4a0e70b7d361ea766a0db9be9429ef43614d3d1ad8c20be4"
 
 [[files]]
 file = "servers.dat"
-hash = "a8eb1455c78fb080eabd96e9007a9bf967e59e98320e904e578ba3f4a8a75092"
+hash = "c743a324bcfb74e6a8442506421d6935d88063dca6418d66c20a10f7df816b10"
 preserve = true
 
 [[files]]
